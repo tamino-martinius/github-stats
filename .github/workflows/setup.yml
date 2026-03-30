@@ -23,16 +23,18 @@ jobs:
 
           git checkout -b "$BRANCH"
 
-          cat > config.json <<'EOF'
+          if [ ! -f config.json ]; then
+            cat > config.json <<'EOF'
           {
             "$schema": "./config.schema.json",
             "exclude": ["__REPO__"]
           }
           EOF
-          sed -i "s|__REPO__|${GITHUB_REPO}|" config.json
+            sed -i "s|__REPO__|${GITHUB_REPO}|" config.json
+            git add config.json
+          fi
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add config.json
-          git commit -m "Setup stats for $BRANCH"
+          git diff --staged --quiet || git commit -m "Setup stats for $BRANCH"
           git push -u origin "$BRANCH"
