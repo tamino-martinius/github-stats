@@ -32,20 +32,26 @@ jobs:
       - run: npm ci
 
       - run: npm run sync
-        timeout-minutes: 120
+        timeout-minutes: 60
+        continue-on-error: true
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
 
+      - run: npm run stats
+        env:
+          ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+
       - name: Commit and push
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stats.json data/full.json.enc
-          if ! git diff --staged --quiet; then
-            git commit -F data/commit-message.txt
+          if [ -f data/commit-message.txt ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/stats.json data/full.json.enc
             git pull --rebase
+            git commit -F data/commit-message.txt
             git push
           fi
           rm -f data/commit-message.txt

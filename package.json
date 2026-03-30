@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "sync": "npx tsx src/sync.ts"
+    "sync": "npx tsx src/sync.ts",
+    "stats": "npx tsx src/stats.ts"
   },
   "engines": {
     "node": ">=20.0.0"

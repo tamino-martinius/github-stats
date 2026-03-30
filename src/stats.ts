@@ -1,0 +1,161 @@
+import { createHash } from "node:crypto";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import type { ImportData } from "get-all-github-contributions";
+import { decrypt, loadConfig, ENCRYPTED_PATH, STATS_PATH, COMMIT_MSG_PATH } from "./shared.js";
+
+interface DayStats {
+  commitCount: number;
+  additions: number;
+  deletions: number;
+  changedFiles: number;
+}
+
+interface RepoStats {
+  name?: string;
+  url?: string;
+  languages?: string[];
+  commitsPerDate: Record<string, DayStats>;
+}
+
+interface AccountStats {
+  user: {
+    username: string;
+    avatarUrl: string;
+    url: string;
+  };
+  organizations: {
+    [key: string]: {
+      avatarUrl: string;
+      url: string;
+    };
+  };
+  languageColors: { [key: string]: string };
+  repositories: RepoStats[];
+}
+
+function isExcluded(repoFullName: string, excludeList: string[]): boolean {
+  const hash = createHash("sha256").update(repoFullName).digest("hex");
+  return excludeList.some((entry) =>
+    entry.startsWith("sha256:") ? entry.slice(7) === hash : entry === repoFullName,
+  );
+}
+
+function aggregate(data: ImportData, exclude: string[] = []): AccountStats {
+  const username = Object.keys(data.accounts)[0];
+  if (!username) throw new Error("No accounts found in sync data");
+  const account = data.accounts[username];
+  if (!account.user) throw new Error(`Account "${username}" has no user data`);
+
+  const user = {
+    username: account.user.login,
+    avatarUrl: account.user.avatarUrl,
+    url: account.user.url,
+  };
+
+  const organizations: AccountStats["organizations"] = {};
+  for (const org of Object.values(account.organizations)) {
+    organizations[org.name] = {
+      avatarUrl: org.avatarUrl,
+      url: org.url,
+    };
+  }
+
+  const repositories: RepoStats[] = [];
+  for (const repo of Object.values(account.repositories)) {
+    const repoFullName = `${repo.owner}/${repo.name}`;
+    if (exclude.length > 0 && isExcluded(repoFullName, exclude)) continue;
+
+    const commitsPerDate: Record<string, DayStats> = {};
+
+    for (const commit of Object.values(repo.commits)) {
+      const date = new Date(commit.commitedAtTimestamp)
+        .toISOString()
+        .split("T")[0];
+
+      if (!commitsPerDate[date]) {
+        commitsPerDate[date] = {
+          commitCount: 0,
+          additions: 0,
+          deletions: 0,
+          changedFiles: 0,
+        };
+      }
+      commitsPerDate[date].commitCount++;
+      commitsPerDate[date].additions += commit.additions;
+      commitsPerDate[date].deletions += commit.deletions;
+      commitsPerDate[date].changedFiles += commit.changedFiles;
+    }
+
+    if (Object.keys(commitsPerDate).length === 0) continue;
+
+    if (repo.isPrivate) {
+      repositories.push({ commitsPerDate });
+    } else {
+      repositories.push({
+        name: repo.name,
+        url: repo.url,
+        languages: repo.languages,
+        commitsPerDate,
+      });
+    }
+  }
+
+  return { user, organizations, languageColors: data.languageColors, repositories };
+}
+
+function main() {
+  if (!process.env.ENCRYPTION_KEY) throw new Error("ENCRYPTION_KEY env var is required");
+  if (!process.env.GITHUB_USERNAME) throw new Error("GITHUB_USERNAME env var is required");
+
+  const encryptionKey = Buffer.from(process.env.ENCRYPTION_KEY, "hex");
+  const username = process.env.GITHUB_USERNAME;
+
+  if (!existsSync(ENCRYPTED_PATH)) {
+    console.log("No sync data found, skipping stats generation");
+    return;
+  }
+
+  const raw = readFileSync(ENCRYPTED_PATH);
+  const importData: ImportData = JSON.parse(decrypt(raw, encryptionKey).toString("utf-8"));
+
+  // Check for new data
+  const hasNewData = Object.values(
+    importData.importState?.accountProgress?.[username]?.progressStats?.new ?? {},
+  ).some((v) => typeof v === "number" && v > 0);
+
+  if (!hasNewData) {
+    console.log("No new data, skipping stats update");
+    return;
+  }
+
+  if (!Object.keys(importData.accounts).length) {
+    console.log("No account data, skipping stats update");
+    return;
+  }
+
+  // Aggregate and write stats
+  const userConfig = loadConfig();
+  const stats = aggregate(importData, userConfig.exclude);
+  writeFileSync(STATS_PATH, JSON.stringify(stats, null, 2));
+
+  // Write commit message
+  const now = new Date().toISOString().replace("T", " ").replace(/\.\d+Z$/, " UTC");
+  const newProgress = importData.importState?.accountProgress?.[username]?.progressStats?.new;
+  const descriptionLines: string[] = [];
+  if (newProgress) {
+    if (newProgress.repoCount > 0) descriptionLines.push(`${newProgress.repoCount} new repos`);
+    if (newProgress.branchCount > 0) descriptionLines.push(`${newProgress.branchCount} new branches`);
+    if (newProgress.commitCount > 0) descriptionLines.push(`${newProgress.commitCount} new commits`);
+    if (newProgress.additionCount > 0) descriptionLines.push(`${newProgress.additionCount} additions`);
+    if (newProgress.deletionCount > 0) descriptionLines.push(`${newProgress.deletionCount} deletions`);
+    if (newProgress.changedFileCount > 0) descriptionLines.push(`${newProgress.changedFileCount} changed files`);
+  }
+
+  const commitTitle = `Update stats: ${now}`;
+  const commitBody = descriptionLines.length > 0 ? `\n${descriptionLines.join("\n")}` : "";
+  writeFileSync(COMMIT_MSG_PATH, commitTitle + commitBody);
+
+  console.log(`Stats updated: ${stats.repositories.length} repositories`);
+}
+
+main();
