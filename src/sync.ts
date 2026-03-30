@@ -125,6 +125,8 @@ function aggregate(data: ImportData, exclude: string[] = []): AccountStats {
       commitsPerDate[date].changedFiles += commit.changedFiles;
     }
 
+    if (Object.keys(commitsPerDate).length === 0) continue;
+
     if (repo.isPrivate) {
       repositories.push({ commitsPerDate });
     } else {
@@ -225,6 +227,24 @@ async function main() {
   );
   writeFileSync(ENCRYPTED_PATH, encrypted);
   writeFileSync(STATS_PATH, JSON.stringify(stats, null, 2));
+
+  // 7. Write commit message file for the workflow
+  const now = new Date().toISOString().replace("T", " ").replace(/\.\d+Z$/, " UTC");
+  const newProgress = importData.importState?.accountProgress?.[username]?.progressStats?.new;
+  const descriptionLines: string[] = [];
+  if (newProgress) {
+    if (newProgress.repoCount > 0) descriptionLines.push(`${newProgress.repoCount} new repos`);
+    if (newProgress.branchCount > 0) descriptionLines.push(`${newProgress.branchCount} new branches`);
+    if (newProgress.commitCount > 0) descriptionLines.push(`${newProgress.commitCount} new commits`);
+    if (newProgress.additionCount > 0) descriptionLines.push(`${newProgress.additionCount} additions`);
+    if (newProgress.deletionCount > 0) descriptionLines.push(`${newProgress.deletionCount} deletions`);
+    if (newProgress.changedFileCount > 0) descriptionLines.push(`${newProgress.changedFileCount} changed files`);
+  }
+  if (syncError) descriptionLines.push("(sync completed with errors)");
+
+  const commitTitle = `Update stats: ${now}`;
+  const commitBody = descriptionLines.length > 0 ? `\n${descriptionLines.join("\n")}` : "";
+  writeFileSync(join(DATA_DIR, "commit-message.txt"), commitTitle + commitBody);
 
   if (syncError) {
     console.warn("Sync completed with errors but saved partial progress");

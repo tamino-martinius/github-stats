@@ -13,6 +13,7 @@ concurrency:
 
 jobs:
   sync:
+    if: ${{ !startsWith(github.event.head_commit.message, 'Update stats:') }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -41,5 +42,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --staged --quiet || (git commit -m "chore: update github stats" && git push)
+          git add data/stats.json data/full.json.enc
+          if ! git diff --staged --quiet; then
+            git commit -F data/commit-message.txt
+            git push
+          fi
+          rm -f data/commit-message.txt
