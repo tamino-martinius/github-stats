@@ -72,8 +72,8 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add data/stats.json data/full.json.enc
-            git pull --rebase
             git commit -F data/commit-message.txt
+            git pull --rebase
             git push
           fi
           rm -f data/commit-message.txt
