@@ -92,8 +92,8 @@ function aggregate(data: ImportData, exclude: string[] = []): AccountStats {
   };
 
   const organizations: AccountStats["organizations"] = {};
-  for (const [key, org] of Object.entries(account.organizations)) {
-    organizations[key] = {
+  for (const org of Object.values(account.organizations)) {
+    organizations[org.name] = {
       avatarUrl: org.avatarUrl,
       url: org.url,
     };
