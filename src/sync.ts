@@ -145,17 +145,37 @@ async function main() {
     };
   }
 
-  // 2. Sync contributions
+  // 2. Sync contributions (may fail due to rate limits etc.)
   const config: ImportConfig = {
     tokens: { [username]: ghPat },
   };
   const syncer = new GetAllGitHubContributions({ config, data: importData });
-  await syncer.sync();
+  let syncError: unknown;
+  try {
+    await syncer.sync();
+  } catch (err) {
+    syncError = err;
+    console.error("Sync failed:", err);
+  }
 
-  // 3. Aggregate public stats
+  // 3. Check if any new data was fetched despite errors
+  const hasNewData = Object.values(
+    importData.importState?.accountProgress?.[username]?.progressStats?.new ?? {}
+  ).some((v) => typeof v === "number" && v > 0);
+
+  if (syncError && !hasNewData) {
+    throw syncError;
+  }
+
+  if (!Object.keys(importData.accounts).length) {
+    if (syncError) throw syncError;
+    throw new Error("No account data after sync");
+  }
+
+  // 4. Aggregate public stats
   const stats = aggregate(importData);
 
-  // 4. Write encrypted full data + public stats
+  // 5. Write encrypted full data + public stats
   if (!existsSync(DATA_DIR)) {
     mkdirSync(DATA_DIR, { recursive: true });
   }
@@ -167,9 +187,15 @@ async function main() {
   writeFileSync(ENCRYPTED_PATH, encrypted);
   writeFileSync(STATS_PATH, JSON.stringify(stats, null, 2));
 
-  console.log(
-    `Synced ${stats.repositories.length} repositories, wrote stats.json`,
-  );
+  if (syncError) {
+    console.warn(
+      `Sync completed with errors but saved partial progress (${Object.values(newStats!).filter((v) => typeof v === "number" && v > 0).join(", ")} new items)`,
+    );
+  } else {
+    console.log(
+      `Synced ${stats.repositories.length} repositories, wrote stats.json`,
+    );
+  }
 }
 
 main().catch((err) => {
