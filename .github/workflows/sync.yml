@@ -45,6 +45,7 @@ jobs:
           git add data/stats.json data/full.json.enc
           if ! git diff --staged --quiet; then
             git commit -F data/commit-message.txt
+            git pull --rebase
             git push
           fi
           rm -f data/commit-message.txt
