@@ -2,6 +2,16 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
+    "concurrency": {
+      "description": "Number of concurrent API requests during sync",
+      "type": "integer",
+      "minimum": 1
+    },
+    "maxRetries": {
+      "description": "Maximum number of retries for failed API requests",
+      "type": "integer",
+      "minimum": 0
+    },
     "skip": {
       "description": "Repositories and organizations to skip during sync",
       "type": "object",

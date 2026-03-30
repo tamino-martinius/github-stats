@@ -56,6 +56,8 @@ function decrypt(data: Buffer, key: Buffer): Buffer {
 }
 
 interface Config {
+  concurrency?: number;
+  maxRetries?: number;
   skip?: {
     organizations?: string[];
     repositories?: string[];
@@ -174,9 +176,17 @@ async function main() {
   const userConfig = loadConfig();
 
   // 3. Sync contributions (may fail due to rate limits etc.)
+  const importOptions: ImportConfig["import"] =
+    userConfig.skip || userConfig.concurrency || userConfig.maxRetries
+      ? {
+          concurrency: userConfig.concurrency,
+          maxRetries: userConfig.maxRetries,
+          skip: userConfig.skip,
+        }
+      : undefined;
   const config: ImportConfig = {
     tokens: { [username]: ghPat },
-    import: userConfig.skip ? { skip: userConfig.skip } : undefined,
+    import: importOptions,
   };
   const syncer = new GetAllGitHubContributions({ config, data: importData });
   let syncError: unknown;
