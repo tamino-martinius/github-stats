@@ -1,0 +1,78 @@
+{
+  "user": {
+    "username": "tamino-martinius",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/3111766?u=dc22466bd97064e00ca1341769e3ad0a5ba08737&v=4",
+    "url": "https://github.com/tamino-martinius"
+  },
+  "organizations": {
+    "shyftplan GmbH": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/10920395?v=4",
+      "url": "https://github.com/shyftplan"
+    },
+    "nextcode GbR": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/36514636?v=4",
+      "url": "https://github.com/wearenextcode"
+    },
+    "Hullt.com": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/59430804?v=4",
+      "url": "https://github.com/hullt-com"
+    },
+    "check": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64831018?v=4",
+      "url": "https://github.com/check-so"
+    },
+    "iconists": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/196566949?v=4",
+      "url": "https://github.com/Iconists"
+    },
+    "easemate": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/214928687?v=4",
+      "url": "https://github.com/easemate"
+    }
+  },
+  "languageColors": {
+    "Ruby": "#701516",
+    "JavaScript": "#f1e05a",
+    "CoffeeScript": "#244776",
+    "CSS": "#663399",
+    "Shell": "#89e051",
+    "Python": "#3572A5",
+    "HTML": "#e34c26",
+    "Objective-C": "#438eff",
+    "C++": "#f34b7d",
+    "C": "#555555",
+    "Swift": "#F05138",
+    "TypeScript": "#3178c6",
+    "Vue": "#41b883",
+    "AppleScript": "#101F1F",
+    "PHP": "#4F5D95",
+    "Pug": "#a86454",
+    "Stylus": "#ff6347",
+    "R": "#198CE7",
+    "Dockerfile": "#384d54",
+    "Solidity": "#AA6746",
+    "HCL": "#844FBA",
+    "GLSL": "#5686a5",
+    "Lua": "#000080",
+    "Makefile": "#427819",
+    "Sass": "#a53b70",
+    "Go Template": "#00ADD8",
+    "XSLT": "#EB8CEB",
+    "ApacheConf": "#d12127",
+    "Objective-C++": "#6866fb",
+    "PLpgSQL": "#336790",
+    "SCSS": "#c6538c",
+    "Apex": "#1797c0",
+    "Smarty": "#f0c040",
+    "Go": "#00ADD8",
+    "jq": "#c7254e",
+    "Rich Text Format": null,
+    "Java": "#b07219",
+    "Gherkin": "#5B2063",
+    "Procfile": "#3B2F63",
+    "Hack": "#878787",
+    "PowerShell": "#012456",
+    "Kotlin": "#A97BFF"
+  },
+  "repositories": []
+}
