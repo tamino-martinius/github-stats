@@ -2,7 +2,7 @@ name: Sync GitHub Stats
 
 on:
   push:
-    branches: [main]
+    branches-ignore: [main]
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
@@ -12,14 +12,36 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      branch-exists: ${{ steps.check.outputs.exists }}
+    steps:
+      - name: Check if user branch exists
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.repository_owner }}
+        run: |
+          if gh api "repos/${{ github.repository }}/branches/${BRANCH}" --silent 2>/dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Branch '${BRANCH}' not found. Run the setup workflow first."
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
   sync:
-    if: ${{ !startsWith(github.event.head_commit.message, 'Update stats:') }}
+    needs: check
+    if: |
+      needs.check.outputs.branch-exists == 'true' &&
+      !startsWith(github.event.head_commit.message || '', 'Update stats:')
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v6
         with:
+          ref: ${{ github.repository_owner }}
           lfs: true
 
       - run: git lfs install
