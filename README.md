@@ -8,7 +8,11 @@ Full sync data is stored encrypted (AES-256-GCM) in Git LFS for delta syncs. The
 
 ### 1. Fork this repository
 
-### 2. Add repository secrets
+### 2. Enable GitHub Actions
+
+Workflows are disabled by default on forked repositories. Go to the **Actions** tab of your fork and click **"I understand my workflows, go ahead and enable them"**.
+
+### 3. Add repository secrets
 
 Go to **Settings > Secrets and variables > Actions** and add:
 
@@ -17,11 +21,15 @@ Go to **Settings > Secrets and variables > Actions** and add:
 | `GH_PAT` | Personal Access Token with `repo` and `read:org` scopes | [Create a PAT](https://github.com/settings/tokens) |
 | `ENCRYPTION_KEY` | 32-byte hex key for encrypting sync data | `openssl rand -hex 32` |
 
-### 3. Run the setup workflow
+### 4. Run the setup workflow
 
 Go to **Actions > Setup User Branch > Run workflow**. This creates a branch named after your GitHub username and commits a default `config.json`.
 
-### 4. Done
+### 5. Enable the sync workflow
+
+Scheduled workflows are disabled by default on forks, even after enabling Actions in step 2. Go to **Actions > Sync GitHub Stats** and click **"Enable workflow"** to activate the daily cron.
+
+### 6. Done
 
 The sync workflow runs daily at midnight UTC on your user branch. You can also trigger it manually from **Actions > Sync GitHub Stats > Run workflow**.
 
