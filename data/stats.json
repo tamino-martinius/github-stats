@@ -1,0 +1,1955 @@
+{
+  "user": {
+    "username": "tamino-martinius",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/3111766?u=dc22466bd97064e00ca1341769e3ad0a5ba08737&v=4",
+    "url": "https://github.com/tamino-martinius"
+  },
+  "organizations": {
+    "MDEyOk9yZ2FuaXphdGlvbjEwOTIwMzk1": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/10920395?v=4",
+      "url": "https://github.com/shyftplan"
+    },
+    "MDEyOk9yZ2FuaXphdGlvbjM2NTE0NjM2": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/36514636?v=4",
+      "url": "https://github.com/wearenextcode"
+    },
+    "MDEyOk9yZ2FuaXphdGlvbjU5NDMwODA0": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/59430804?v=4",
+      "url": "https://github.com/hullt-com"
+    },
+    "MDEyOk9yZ2FuaXphdGlvbjY0ODMxMDE4": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64831018?v=4",
+      "url": "https://github.com/check-so"
+    },
+    "O_kgDOC7dfpQ": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/196566949?v=4",
+      "url": "https://github.com/Iconists"
+    },
+    "O_kgDODM-NLw": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/214928687?v=4",
+      "url": "https://github.com/easemate"
+    }
+  },
+  "languageColors": {
+    "Ruby": "#701516",
+    "JavaScript": "#f1e05a",
+    "CoffeeScript": "#244776",
+    "CSS": "#663399",
+    "Shell": "#89e051",
+    "Python": "#3572A5",
+    "HTML": "#e34c26",
+    "Objective-C": "#438eff",
+    "C++": "#f34b7d",
+    "C": "#555555",
+    "Swift": "#F05138",
+    "TypeScript": "#3178c6",
+    "Vue": "#41b883",
+    "AppleScript": "#101F1F",
+    "PHP": "#4F5D95",
+    "Pug": "#a86454",
+    "Stylus": "#ff6347",
+    "R": "#198CE7",
+    "Dockerfile": "#384d54",
+    "Solidity": "#AA6746",
+    "HCL": "#844FBA",
+    "GLSL": "#5686a5",
+    "Lua": "#000080",
+    "Makefile": "#427819",
+    "Sass": "#a53b70",
+    "Go Template": "#00ADD8",
+    "XSLT": "#EB8CEB",
+    "ApacheConf": "#d12127",
+    "Objective-C++": "#6866fb",
+    "PLpgSQL": "#336790",
+    "SCSS": "#c6538c",
+    "Apex": "#1797c0",
+    "Smarty": "#f0c040",
+    "Go": "#00ADD8",
+    "jq": "#c7254e",
+    "Rich Text Format": null,
+    "Java": "#b07219",
+    "Gherkin": "#5B2063",
+    "Procfile": "#3B2F63",
+    "Hack": "#878787",
+    "PowerShell": "#012456",
+    "Kotlin": "#A97BFF"
+  },
+  "repositories": [
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-server-setup",
+      "url": "https://github.com/tamino-martinius/meteor-server-setup",
+      "languages": [
+        "Shell",
+        "CoffeeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-arm",
+      "url": "https://github.com/tamino-martinius/meteor-arm",
+      "languages": [
+        "JavaScript",
+        "CSS",
+        "Shell",
+        "CoffeeScript",
+        "Python"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "cdn-getshares.github.io",
+      "url": "https://github.com/cdn-getshares/cdn-getshares.github.io",
+      "languages": [
+        "CSS",
+        "CoffeeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "api.getshar.es",
+      "url": "https://github.com/tamino-martinius/api.getshar.es",
+      "languages": [
+        "JavaScript",
+        "CoffeeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-handlebars-obj",
+      "url": "https://github.com/tamino-martinius/meteor-handlebars-obj",
+      "languages": [
+        "CoffeeScript",
+        "JavaScript",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-type-checking",
+      "url": "https://github.com/tamino-martinius/meteor-type-checking",
+      "languages": [
+        "JavaScript",
+        "CoffeeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-handlebars-underscore",
+      "url": "https://github.com/tamino-martinius/meteor-handlebars-underscore",
+      "languages": [
+        "CoffeeScript",
+        "JavaScript",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-method-pagination",
+      "url": "https://github.com/tamino-martinius/meteor-method-pagination",
+      "languages": [
+        "CoffeeScript",
+        "CSS",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-node-modules",
+      "url": "https://github.com/tamino-martinius/meteor-node-modules",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-deep-extend",
+      "url": "https://github.com/tamino-martinius/node-deep-extend",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-deep-extend",
+      "url": "https://github.com/tamino-martinius/meteor-deep-extend",
+      "languages": [
+        "CoffeeScript",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-bootstrap-script",
+      "url": "https://github.com/tamino-martinius/meteor-bootstrap-script",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "html5-reset-stylus",
+      "url": "https://github.com/tamino-martinius/html5-reset-stylus",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-hashids-server",
+      "url": "https://github.com/tamino-martinius/meteor-hashids-server",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-ui-obj",
+      "url": "https://github.com/tamino-martinius/meteor-ui-obj",
+      "languages": [
+        "JavaScript",
+        "CoffeeScript",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-ui-underscore",
+      "url": "https://github.com/tamino-martinius/meteor-ui-underscore",
+      "languages": [
+        "JavaScript",
+        "CoffeeScript",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "atom-language-spacebars",
+      "url": "https://github.com/tamino-martinius/atom-language-spacebars",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-phantom",
+      "url": "https://github.com/tamino-martinius/meteor-phantom",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-droplet-scripts",
+      "url": "https://github.com/tamino-martinius/meteor-droplet-scripts",
+      "languages": [
+        "Shell"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-ics",
+      "url": "https://github.com/tamino-martinius/meteor-ics",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "errbit",
+      "url": "https://github.com/jjosten/errbit",
+      "languages": [
+        "Ruby",
+        "JavaScript",
+        "CSS",
+        "Shell"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-accounts-anonymous",
+      "url": "https://github.com/tamino-martinius/meteor-accounts-anonymous",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "paranoia",
+      "url": "https://github.com/tamino-martinius/paranoia",
+      "languages": [
+        "Ruby"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-bamboo-reporter",
+      "url": "https://github.com/tamino-martinius/meteor-bamboo-reporter",
+      "languages": [
+        "CoffeeScript",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-lazy-analytics",
+      "url": "https://github.com/tamino-martinius/meteor-lazy-analytics",
+      "languages": [
+        "CoffeeScript",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-faker",
+      "url": "https://github.com/tamino-martinius/meteor-faker",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-jade",
+      "url": "https://github.com/tamino-martinius/meteor-jade",
+      "languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "www.getshar.es",
+      "url": "https://github.com/tamino-martinius/www.getshar.es",
+      "languages": [
+        "HTML",
+        "CSS",
+        "CoffeeScript",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-up",
+      "url": "https://github.com/tamino-martinius/meteor-up",
+      "languages": [
+        "JavaScript",
+        "Shell"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "minimongoid",
+      "url": "https://github.com/tamino-martinius/minimongoid",
+      "languages": [
+        "CSS",
+        "HTML",
+        "JavaScript",
+        "CoffeeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "knex_rename",
+      "url": "https://github.com/tamino-martinius/knex_rename",
+      "languages": [
+        "JavaScript",
+        "HTML",
+        "Shell"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-smart-record",
+      "url": "https://github.com/tamino-martinius/meteor-smart-record",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-smart-form",
+      "url": "https://github.com/tamino-martinius/meteor-smart-form",
+      "languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-smart-form-delete-button",
+      "url": "https://github.com/tamino-martinius/meteor-smart-form-delete-button",
+      "languages": [
+        "HTML",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "whoisscrummaster",
+      "url": "https://github.com/tamino-martinius/whoisscrummaster",
+      "languages": [
+        "CSS",
+        "HTML",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "tamino.dev",
+      "url": "https://github.com/tamino-martinius/tamino.dev",
+      "languages": [
+        "HTML",
+        "JavaScript",
+        "Shell",
+        "TypeScript",
+        "Vue"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-next-model",
+      "url": "https://github.com/tamino-martinius/node-next-model",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-next-model-knex-connector",
+      "url": "https://github.com/tamino-martinius/node-next-model-knex-connector",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-next-model-local-storage-connector",
+      "url": "https://github.com/tamino-martinius/node-next-model-local-storage-connector",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-next-model-api-router",
+      "url": "https://github.com/tamino-martinius/node-next-model-api-router",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-next-model-api-client-connector",
+      "url": "https://github.com/tamino-martinius/node-next-model-api-client-connector",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-next-model-api-server-express",
+      "url": "https://github.com/tamino-martinius/node-next-model-api-server-express",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "ga-api",
+      "url": "https://github.com/tamino-martinius/ga-api",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "homebrew-cask",
+      "url": "https://github.com/tamino-martinius/homebrew-cask",
+      "languages": [
+        "Ruby",
+        "Shell"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--typescript",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--typescript",
+      "languages": [
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--graphql",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--graphql",
+      "languages": [
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "docker-rvm",
+      "url": "https://github.com/tamino-martinius/docker-rvm",
+      "languages": [
+        "Shell"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--template",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--template",
+      "languages": [
+        "JavaScript",
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--example",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--example",
+      "languages": [
+        "CSS",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--sql-query-performance",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--sql-query-performance",
+      "languages": [
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--api",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--api",
+      "languages": [
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "ui-snippets-template",
+      "url": "https://github.com/tamino-martinius/ui-snippets-template",
+      "languages": [
+        "HTML",
+        "TypeScript",
+        "CSS",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "ui-snippets-checkboxes",
+      "url": "https://github.com/tamino-martinius/ui-snippets-checkboxes",
+      "languages": [
+        "HTML",
+        "TypeScript",
+        "CSS",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "ui-snippets-radiobuttons",
+      "url": "https://github.com/tamino-martinius/ui-snippets-radiobuttons",
+      "languages": [
+        "HTML",
+        "TypeScript",
+        "CSS",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "ui-snippets-menu-animations",
+      "url": "https://github.com/tamino-martinius/ui-snippets-menu-animations",
+      "languages": [
+        "HTML",
+        "TypeScript",
+        "CSS",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-jira-api-v2",
+      "url": "https://github.com/tamino-martinius/node-jira-api-v2",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-ts-dedent",
+      "url": "https://github.com/tamino-martinius/node-ts-dedent",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--new-js-features--2018",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--new-js-features--2018",
+      "languages": [
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "template-webpack-typescript-vue",
+      "url": "https://github.com/tamino-martinius/template-webpack-typescript-vue",
+      "languages": [
+        "HTML",
+        "Vue",
+        "TypeScript",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "vscode-language-spacebars",
+      "url": "https://github.com/tamino-martinius/vscode-language-spacebars",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "template-webpack-tsx-vue",
+      "url": "https://github.com/tamino-martinius/template-webpack-tsx-vue",
+      "languages": [
+        "TypeScript",
+        "Vue",
+        "HTML",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "template-webpack-typescript",
+      "url": "https://github.com/tamino-martinius/template-webpack-typescript",
+      "languages": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "template-webpack-typescript-lambda",
+      "url": "https://github.com/tamino-martinius/template-webpack-typescript-lambda",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-github-graphql-api",
+      "url": "https://github.com/tamino-martinius/node-github-graphql-api",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lambda-get-all-github-contributions",
+      "url": "https://github.com/tamino-martinius/lambda-get-all-github-contributions",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--sam",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--sam",
+      "languages": [
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "contributions.taminomartinius.de",
+      "url": "https://github.com/tamino-martinius/contributions.taminomartinius.de",
+      "languages": [
+        "TypeScript",
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Shell"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "ui-snippets-git-loading",
+      "url": "https://github.com/tamino-martinius/ui-snippets-git-loading",
+      "languages": [
+        "HTML",
+        "TypeScript",
+        "CSS",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "template-webpack-tsx-vue-vuex",
+      "url": "https://github.com/tamino-martinius/template-webpack-tsx-vue-vuex",
+      "languages": [
+        "TypeScript",
+        "Vue",
+        "HTML",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "ui-snippets-ascii-generator",
+      "url": "https://github.com/tamino-martinius/ui-snippets-ascii-generator",
+      "languages": [
+        "HTML",
+        "TypeScript",
+        "CSS",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "ui-snippets-starfield",
+      "url": "https://github.com/tamino-martinius/ui-snippets-starfield",
+      "languages": [
+        "HTML",
+        "TypeScript",
+        "CSS",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-migrator",
+      "url": "https://github.com/tamino-martinius/node-migrator",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-pg-migrator",
+      "url": "https://github.com/tamino-martinius/node-pg-migrator",
+      "languages": [
+        "TypeScript",
+        "JavaScript",
+        "R"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "cloudformation-sentry",
+      "url": "https://github.com/tamino-martinius/cloudformation-sentry",
+      "languages": [
+        "Ruby",
+        "Shell",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-pg-model",
+      "url": "https://github.com/tamino-martinius/node-pg-model",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "tap-i18n",
+      "url": "https://github.com/tamino-martinius/tap-i18n",
+      "languages": [
+        "JavaScript",
+        "CoffeeScript",
+        "HTML",
+        "Shell"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "ruby.town",
+      "url": "https://github.com/tamino-martinius/ruby.town",
+      "languages": [
+        "HTML",
+        "JavaScript",
+        "CSS"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "loopback4-example-microservices",
+      "url": "https://github.com/tamino-martinius/loopback4-example-microservices",
+      "languages": [
+        "Shell",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "loopback4-example-shopping",
+      "url": "https://github.com/tamino-martinius/loopback4-example-shopping",
+      "languages": [
+        "Shell",
+        "JavaScript",
+        "TypeScript",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "loopback4-example-family-tree",
+      "url": "https://github.com/tamino-martinius/loopback4-example-family-tree",
+      "languages": [
+        "JavaScript",
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--new-js-features--2019",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--new-js-features--2019",
+      "languages": [
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "template--test",
+      "url": "https://github.com/tamino-martinius/template--test",
+      "languages": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "cdk-lambda-layers--node-aws-sdk",
+      "url": "https://github.com/tamino-martinius/cdk-lambda-layers--node-aws-sdk",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--cdk",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--cdk",
+      "languages": [
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "gitfity",
+      "url": "https://github.com/tamino-martinius/gitfity",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lambda-layer--node--knex-data-api",
+      "url": "https://github.com/tamino-martinius/lambda-layer--node--knex-data-api",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lambda-layer--node--apollo-server-lambda",
+      "url": "https://github.com/tamino-martinius/lambda-layer--node--apollo-server-lambda",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-next-model-data-api-connector",
+      "url": "https://github.com/tamino-martinius/node-next-model-data-api-connector",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "cdk-lambda-layers--node-postgres",
+      "url": "https://github.com/tamino-martinius/cdk-lambda-layers--node-postgres",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-postgres-migrator",
+      "url": "https://github.com/tamino-martinius/node-postgres-migrator",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "R"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "cdk-lambda-layers--node-jwt",
+      "url": "https://github.com/tamino-martinius/cdk-lambda-layers--node-jwt",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--new-js-features--2020",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--new-js-features--2020",
+      "languages": [
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--never-change-a-running-system",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--never-change-a-running-system",
+      "languages": [
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about--api-workshop-1",
+      "url": "https://github.com/tamino-martinius/lets-talk-about--api-workshop-1",
+      "languages": [
+        "Pug",
+        "Stylus"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "modular-error-handling",
+      "url": "https://github.com/tamino-martinius/modular-error-handling",
+      "languages": [
+        "JavaScript",
+        "Ruby",
+        "CSS",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "cursors",
+      "url": "https://github.com/andreasstorm/cursors",
+      "languages": [
+        "Shell",
+        "JavaScript",
+        "Python",
+        "Objective-C",
+        "Lua"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about",
+      "url": "https://github.com/tamino-martinius/lets-talk-about",
+      "languages": [
+        "JavaScript",
+        "CSS",
+        "Go Template"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "lets-talk-about.io",
+      "url": "https://github.com/tamino-martinius/lets-talk-about.io",
+      "languages": [
+        "CSS",
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node-get-all-github-contributions",
+      "url": "https://github.com/tamino-martinius/node-get-all-github-contributions",
+      "languages": [
+        "HTML",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "errbit",
+      "url": "https://github.com/shyftplan/errbit",
+      "languages": [
+        "Ruby",
+        "HTML",
+        "JavaScript",
+        "CSS"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "errbit_jira_plugin",
+      "url": "https://github.com/shyftplan/errbit_jira_plugin",
+      "languages": [
+        "Ruby",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "paper_trail",
+      "url": "https://github.com/shyftplan/paper_trail",
+      "languages": [
+        "Ruby",
+        "HTML",
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "rspec-rerun",
+      "url": "https://github.com/shyftplan/rspec-rerun",
+      "languages": [
+        "Ruby"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "fullcalendar",
+      "url": "https://github.com/shyftplan/fullcalendar",
+      "languages": [
+        "JavaScript",
+        "Shell",
+        "HTML",
+        "PHP",
+        "CSS"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "push",
+      "url": "https://github.com/shyftplan/push",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "postgres-packages",
+      "url": "https://github.com/shyftplan/postgres-packages",
+      "languages": [
+        "JavaScript",
+        "HTML",
+        "PLpgSQL",
+        "Shell"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "bootstrap-colorpicker-rails",
+      "url": "https://github.com/shyftplan/bootstrap-colorpicker-rails",
+      "languages": [
+        "Ruby"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "graphql-tools",
+      "url": "https://github.com/shyftplan/graphql-tools",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "full_stack_test_2016",
+      "url": "https://github.com/shyftplan/full_stack_test_2016",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "meteor-up",
+      "url": "https://github.com/shyftplan/meteor-up",
+      "languages": [
+        "JavaScript",
+        "Shell"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "grape-swagger-rails",
+      "url": "https://github.com/shyftplan/grape-swagger-rails",
+      "languages": [
+        "Ruby",
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "apollo-client",
+      "url": "https://github.com/shyftplan/apollo-client",
+      "languages": [
+        "JavaScript",
+        "Shell",
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "i18n-js",
+      "url": "https://github.com/shyftplan/i18n-js",
+      "languages": [
+        "Ruby",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "paranoia",
+      "url": "https://github.com/shyftplan/paranoia",
+      "languages": [
+        "Ruby"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "chosen-rails",
+      "url": "https://github.com/shyftplan/chosen-rails",
+      "languages": [
+        "Ruby"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "closeio",
+      "url": "https://github.com/shyftplan/closeio",
+      "languages": [
+        "Ruby"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "active-record-lax-includes",
+      "url": "https://github.com/shyftplan/active-record-lax-includes",
+      "languages": [
+        "Ruby"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "sppt_rubocop",
+      "url": "https://github.com/shyftplan/sppt_rubocop",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "seamless_database_pool",
+      "url": "https://github.com/shyftplan/seamless_database_pool",
+      "languages": [
+        "Ruby"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "apartment",
+      "url": "https://github.com/shyftplan/apartment",
+      "languages": [
+        "Ruby",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "wiki",
+      "url": "https://github.com/shyftplan/wiki",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "presentation--template",
+      "url": "https://github.com/shyftplan/presentation--template",
+      "languages": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "sppt_gql-exporter",
+      "url": "https://github.com/shyftplan/sppt_gql-exporter",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "sppt_interview_tasks",
+      "url": "https://github.com/shyftplan/sppt_interview_tasks",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "annotate_models",
+      "url": "https://github.com/shyftplan/annotate_models",
+      "languages": [
+        "Ruby",
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "n8n-nodes-psql-upsert",
+      "url": "https://github.com/shyftplan/n8n-nodes-psql-upsert",
+      "languages": [
+        "JavaScript",
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "runner-images",
+      "url": "https://github.com/shyftplan/runner-images",
+      "languages": [
+        "Shell",
+        "Ruby",
+        "Python",
+        "PowerShell",
+        "AppleScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "serviceworker-rails",
+      "url": "https://github.com/shyftplan/serviceworker-rails",
+      "languages": [
+        "Shell",
+        "JavaScript",
+        "Ruby",
+        "CSS",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "pry-byebug",
+      "url": "https://github.com/shyftplan/pry-byebug",
+      "languages": [
+        "Ruby"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "handlebars_assets",
+      "url": "https://github.com/shyftplan/handlebars_assets",
+      "languages": [
+        "JavaScript",
+        "Ruby"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "jsPDF-AutoTable",
+      "url": "https://github.com/shyftplan/jsPDF-AutoTable",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "ai-ui-ux-skill",
+      "url": "https://github.com/shyftplan/ai-ui-ux-skill",
+      "languages": [
+        "JavaScript",
+        "Python",
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "iconists",
+      "url": "https://github.com/wearenextcode/iconists",
+      "languages": [
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node--server",
+      "url": "https://github.com/hullt-com/node--server",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "name": "node--client",
+      "url": "https://github.com/hullt-com/node--client",
+      "languages": [
+        "TypeScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "check.so",
+      "url": "https://github.com/check-so/check.so",
+      "languages": [
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "central-icons-react",
+      "url": "https://github.com/Iconists/central-icons-react",
+      "languages": [],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "web-kit",
+      "url": "https://github.com/easemate/web-kit",
+      "languages": [
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "opentype",
+      "url": "https://github.com/easemate/opentype",
+      "languages": [
+        "JavaScript"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "name": "theatre",
+      "url": "https://github.com/easemate/theatre",
+      "languages": [
+        "Shell",
+        "JavaScript",
+        "TypeScript",
+        "CSS",
+        "HTML"
+      ],
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    },
+    {
+      "commitsPerDate": {}
+    }
+  ]
+}
