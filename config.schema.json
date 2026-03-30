@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "skip": {
+      "description": "Repositories and organizations to skip during sync",
+      "type": "object",
+      "properties": {
+        "organizations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Organization logins to skip"
+        },
+        "repositories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Repositories to skip (owner/repo format)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "exclude": {
+      "description": "Repositories to exclude from aggregated stats (still synced for data completeness). Use 'owner/repo' for public repos or 'sha256:<hash>' for private repos where the hash is the SHA-256 hex digest of 'owner/repo'",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

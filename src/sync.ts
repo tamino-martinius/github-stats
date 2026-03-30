@@ -1,4 +1,4 @@
-import { createCipheriv, createDecipheriv, randomBytes } from "node:crypto";
+import { createCipheriv, createDecipheriv, createHash, randomBytes } from "node:crypto";
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { GetAllGitHubContributions } from "get-all-github-contributions";
@@ -55,7 +55,29 @@ function decrypt(data: Buffer, key: Buffer): Buffer {
   return Buffer.concat([decipher.update(ciphertext), decipher.final()]);
 }
 
-function aggregate(data: ImportData): AccountStats {
+interface Config {
+  skip?: {
+    organizations?: string[];
+    repositories?: string[];
+  };
+  exclude?: string[];
+}
+
+const CONFIG_PATH = join(process.cwd(), "config.json");
+
+function loadConfig(): Config {
+  if (!existsSync(CONFIG_PATH)) return {};
+  return JSON.parse(readFileSync(CONFIG_PATH, "utf-8"));
+}
+
+function isExcluded(repoFullName: string, excludeList: string[]): boolean {
+  const hash = createHash("sha256").update(repoFullName).digest("hex");
+  return excludeList.some((entry) =>
+    entry.startsWith("sha256:") ? entry.slice(7) === hash : entry === repoFullName,
+  );
+}
+
+function aggregate(data: ImportData, exclude: string[] = []): AccountStats {
   const username = Object.keys(data.accounts)[0];
   if (!username) throw new Error("No accounts found in sync data");
   const account = data.accounts[username];
@@ -77,6 +99,9 @@ function aggregate(data: ImportData): AccountStats {
 
   const repositories: RepoStats[] = [];
   for (const repo of Object.values(account.repositories)) {
+    const repoFullName = `${repo.owner}/${repo.name}`;
+    if (exclude.length > 0 && isExcluded(repoFullName, exclude)) continue;
+
     const commitsPerDate: Record<string, DayStats> = {};
 
     for (const commit of Object.values(repo.commits)) {
@@ -145,9 +170,13 @@ async function main() {
     };
   }
 
-  // 2. Sync contributions (may fail due to rate limits etc.)
+  // 2. Load optional config
+  const userConfig = loadConfig();
+
+  // 3. Sync contributions (may fail due to rate limits etc.)
   const config: ImportConfig = {
     tokens: { [username]: ghPat },
+    import: userConfig.skip ? { skip: userConfig.skip } : undefined,
   };
   const syncer = new GetAllGitHubContributions({ config, data: importData });
   let syncError: unknown;
@@ -158,7 +187,7 @@ async function main() {
     console.error("Sync failed:", err);
   }
 
-  // 3. Check if any new data was fetched despite errors
+  // 4. Check if any new data was fetched despite errors
   const hasNewData = Object.values(
     importData.importState?.accountProgress?.[username]?.progressStats?.new ?? {}
   ).some((v) => typeof v === "number" && v > 0);
@@ -172,10 +201,10 @@ async function main() {
     throw new Error("No account data after sync");
   }
 
-  // 4. Aggregate public stats
-  const stats = aggregate(importData);
+  // 5. Aggregate public stats
+  const stats = aggregate(importData, userConfig.exclude);
 
-  // 5. Write encrypted full data + public stats
+  // 6. Write encrypted full data + public stats
   if (!existsSync(DATA_DIR)) {
     mkdirSync(DATA_DIR, { recursive: true });
   }
@@ -188,9 +217,7 @@ async function main() {
   writeFileSync(STATS_PATH, JSON.stringify(stats, null, 2));
 
   if (syncError) {
-    console.warn(
-      `Sync completed with errors but saved partial progress (${Object.values(newStats!).filter((v) => typeof v === "number" && v > 0).join(", ")} new items)`,
-    );
+    console.warn("Sync completed with errors but saved partial progress");
   } else {
     console.log(
       `Synced ${stats.repositories.length} repositories, wrote stats.json`,
