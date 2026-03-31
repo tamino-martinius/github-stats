@@ -1,4 +1,7 @@
 {
   "$schema": "./config.schema.json",
-  "exclude": ["tamino-martinius/github-stats"]
+  "exclude": [
+    "tamino-martinius/github-stats"
+  ],
+  "timeZone": "CET"
 }
