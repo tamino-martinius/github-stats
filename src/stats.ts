@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import type { ImportData } from "get-all-github-contributions";
 import { decrypt, loadConfig, ENCRYPTED_PATH, STATS_PATH, COMMIT_MSG_PATH } from "./shared.js";
 
-interface DayStats {
+interface CommitStats {
   commitCount: number;
   additions: number;
   deletions: number;
@@ -14,7 +14,8 @@ interface RepoStats {
   name?: string;
   url?: string;
   languages?: string[];
-  commitsPerDate: Record<string, DayStats>;
+  commitsPerDate: Record<string, CommitStats>; // yyyy-MM-dd
+  commitsPerHour: Record<string, CommitStats>; // ddd, hh
 }
 
 interface AccountStats {
@@ -40,7 +41,19 @@ function isExcluded(repoFullName: string, excludeList: string[]): boolean {
   );
 }
 
-function aggregate(data: ImportData, exclude: string[] = []): AccountStats {
+function aggregate(data: ImportData, exclude: string[] = [], timeZone: string = "UTC"): AccountStats {
+  const dateFormatter = new Intl.DateTimeFormat("en-CA", { // yyyy-MM-dd
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
+  const hourFormatter = new Intl.DateTimeFormat("en-US", { // ddd, hh
+    timeZone,
+    weekday: "short",
+    hour: "2-digit",
+    hourCycle: "h23",
+  });
   const username = Object.keys(data.accounts)[0];
   if (!username) throw new Error("No accounts found in sync data");
   const account = data.accounts[username];
@@ -65,37 +78,42 @@ function aggregate(data: ImportData, exclude: string[] = []): AccountStats {
     const repoFullName = `${repo.owner}/${repo.name}`;
     if (exclude.length > 0 && isExcluded(repoFullName, exclude)) continue;
 
-    const commitsPerDate: Record<string, DayStats> = {};
+    const commitsPerDate: Record<string, CommitStats> = {};
+    const commitsPerHour: Record<string, CommitStats> = {};
 
     for (const commit of Object.values(repo.commits)) {
-      const date = new Date(commit.commitedAtTimestamp)
-        .toISOString()
-        .split("T")[0];
+      const dt = new Date(commit.commitedAtTimestamp);
+      const date = dateFormatter.format(dt);
+      const hourKey = hourFormatter.format(dt);
 
       if (!commitsPerDate[date]) {
-        commitsPerDate[date] = {
-          commitCount: 0,
-          additions: 0,
-          deletions: 0,
-          changedFiles: 0,
-        };
+        commitsPerDate[date] = { commitCount: 0, additions: 0, deletions: 0, changedFiles: 0 };
       }
       commitsPerDate[date].commitCount++;
       commitsPerDate[date].additions += commit.additions;
       commitsPerDate[date].deletions += commit.deletions;
       commitsPerDate[date].changedFiles += commit.changedFiles;
+
+      if (!commitsPerHour[hourKey]) {
+        commitsPerHour[hourKey] = { commitCount: 0, additions: 0, deletions: 0, changedFiles: 0 };
+      }
+      commitsPerHour[hourKey].commitCount++;
+      commitsPerHour[hourKey].additions += commit.additions;
+      commitsPerHour[hourKey].deletions += commit.deletions;
+      commitsPerHour[hourKey].changedFiles += commit.changedFiles;
     }
 
     if (Object.keys(commitsPerDate).length === 0) continue;
 
     if (repo.isPrivate) {
-      repositories.push({ commitsPerDate });
+      repositories.push({ commitsPerDate, commitsPerHour });
     } else {
       repositories.push({
         name: repo.name,
         url: repo.url,
         languages: repo.languages,
         commitsPerDate,
+        commitsPerHour,
       });
     }
   }
@@ -135,7 +153,7 @@ function main() {
 
   // Aggregate and write stats
   const userConfig = loadConfig();
-  const stats = aggregate(importData, userConfig.exclude);
+  const stats = aggregate(importData, userConfig.exclude, userConfig.timeZone);
   writeFileSync(STATS_PATH, JSON.stringify(stats, null, 2));
 
   // Write commit message
