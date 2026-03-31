@@ -45,6 +45,7 @@ Create or edit `config.json` on your user branch (see `config.schema.json` for t
 ```json
 {
   "$schema": "./config.schema.json",
+  "timeZone": "America/New_York",
   "concurrency": 10,
   "maxRetries": 2,
   "skip": {
@@ -60,6 +61,7 @@ Create or edit `config.json` on your user branch (see `config.schema.json` for t
 
 | Field | Description |
 |-------|-------------|
+| `timeZone` | IANA time zone for grouping commits by date and hour (default: `UTC`) |
 | `concurrency` | Number of concurrent API requests during sync |
 | `maxRetries` | Maximum retries for failed API requests |
 | `skip.organizations` | Organizations to skip entirely during sync |
@@ -86,7 +88,15 @@ The `data/stats.json` file has this structure:
     url?: string;        // only for public repos
     languages?: string[]; // only for public repos
     commitsPerDate: {
-      [date: string]: {  // YYYY-MM-DD
+      [date: string]: {  // yyyy-MM-dd
+        commitCount: number;
+        additions: number;
+        deletions: number;
+        changedFiles: number;
+      };
+    };
+    commitsPerHour: {
+      [weekdayHour: string]: {  // "ddd, hh" e.g. "Tue, 09"
         commitCount: number;
         additions: number;
         deletions: number;
@@ -97,7 +107,7 @@ The `data/stats.json` file has this structure:
 }
 ```
 
-Private repositories appear as entries with only `commitsPerDate` — no identifying information is included.
+Dates and hours are grouped using the configured `timeZone` (defaults to UTC). Private repositories appear as entries with only `commitsPerDate` and `commitsPerHour` — no identifying information is included.
 
 ## How it works
 
