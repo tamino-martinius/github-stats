@@ -29,6 +29,7 @@ export function decrypt(data: Buffer, key: Buffer): Buffer {
 }
 
 export interface Config {
+  timeZone?: string;
   concurrency?: number;
   maxRetries?: number;
   skip?: {
