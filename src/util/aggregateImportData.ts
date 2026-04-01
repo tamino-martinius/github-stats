@@ -34,10 +34,10 @@ const commentGetTimestamp = (timestamp: number) => timestamp;
 const commitDataReducer = (currentValue: CommitStats | undefined, commit: Commit) => {
   if (!currentValue) {
     return {
-      commitCount: 0,
-      additions: 0,
-      deletions: 0,
-      changedFiles: 0,
+      commitCount: 1,
+      additions: commit.additions,
+      deletions: commit.deletions,
+      changedFiles: commit.changedFiles,
     };
   }
   currentValue.commitCount += 1;
