@@ -17,6 +17,18 @@
       "type": "integer",
       "minimum": 0
     },
+    "pageSize": {
+      "description": "Number of items per page for GraphQL pagination (default: 50)",
+      "type": "integer",
+      "minimum": 1,
+      "default": 50
+    },
+    "rateLimitGracePeriod": {
+      "description": "Grace period in milliseconds added when waiting for rate limit reset (default: 1000)",
+      "type": "integer",
+      "minimum": 0,
+      "default": 1000
+    },
     "skip": {
       "description": "Repositories and organizations to skip during sync",
       "type": "object",

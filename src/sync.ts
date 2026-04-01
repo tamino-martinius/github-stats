@@ -59,10 +59,12 @@ async function main() {
   // 3. Load config and sync
   const userConfig = loadConfig();
   const importOptions: ImportConfig["import"] =
-    userConfig.skip || userConfig.concurrency || userConfig.maxRetries
+    userConfig.skip || userConfig.concurrency || userConfig.maxRetries || userConfig.pageSize || userConfig.rateLimitGracePeriod
       ? {
           concurrency: userConfig.concurrency,
           maxRetries: userConfig.maxRetries,
+          pageSize: userConfig.pageSize,
+          rateLimitGracePeriod: userConfig.rateLimitGracePeriod,
           skip: userConfig.skip,
         }
       : undefined;
