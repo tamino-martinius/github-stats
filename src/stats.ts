@@ -106,16 +106,6 @@ function main() {
   const raw = readFileSync(ENCRYPTED_PATH);
   const importData: ImportData = JSON.parse(decrypt(raw, encryptionKey).toString("utf-8"));
 
-  // Check for new data
-  const hasNewData = Object.values(
-    importData.importState?.accountProgress?.[username]?.progressStats?.new ?? {},
-  ).some((v) => typeof v === "number" && v > 0);
-
-  if (!hasNewData) {
-    console.log("No new data, skipping stats update");
-    return;
-  }
-
   if (!Object.keys(importData.accounts).length) {
     console.log("No account data, skipping stats update");
     return;
