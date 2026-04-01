@@ -21852,6 +21852,73 @@
       }
     },
     {
+      "name": "node-get-all-github-contributions",
+      "url": "https://github.com/tamino-martinius/node-get-all-github-contributions",
+      "languages": [
+        "HTML",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "commitsPerDate": {
+        "2026-04-01": {
+          "commitCount": 5,
+          "additions": 46,
+          "deletions": 9,
+          "changedFiles": 12
+        },
+        "2026-03-30": {
+          "commitCount": 8,
+          "additions": 1453,
+          "deletions": 1657,
+          "changedFiles": 49
+        },
+        "2026-03-29": {
+          "commitCount": 1,
+          "additions": 2257,
+          "deletions": 0,
+          "changedFiles": 21
+        }
+      },
+      "commitsPerHour": {
+        "Wed, 12": {
+          "commitCount": 3,
+          "additions": 43,
+          "deletions": 7,
+          "changedFiles": 10
+        },
+        "Wed, 11": {
+          "commitCount": 2,
+          "additions": 3,
+          "deletions": 2,
+          "changedFiles": 2
+        },
+        "Mon, 16": {
+          "commitCount": 1,
+          "additions": 29,
+          "deletions": 18,
+          "changedFiles": 4
+        },
+        "Mon, 13": {
+          "commitCount": 5,
+          "additions": 187,
+          "deletions": 18,
+          "changedFiles": 9
+        },
+        "Mon, 12": {
+          "commitCount": 2,
+          "additions": 1237,
+          "deletions": 1621,
+          "changedFiles": 36
+        },
+        "Sun, 11": {
+          "commitCount": 1,
+          "additions": 2257,
+          "deletions": 0,
+          "changedFiles": 21
+        }
+      }
+    },
+    {
       "commitsPerDate": {
         "2022-08-15": {
           "commitCount": 1,
@@ -34502,10 +34569,10 @@
           "changedFiles": 4
         },
         "2024-12-05": {
-          "commitCount": 1,
-          "additions": 188,
-          "deletions": 135,
-          "changedFiles": 2
+          "commitCount": 4,
+          "additions": 272,
+          "deletions": 145,
+          "changedFiles": 10
         },
         "2024-12-04": {
           "commitCount": 11,
@@ -34520,10 +34587,10 @@
           "changedFiles": 86
         },
         "2024-12-02": {
-          "commitCount": 5,
-          "additions": 165,
-          "deletions": 67,
-          "changedFiles": 6
+          "commitCount": 10,
+          "additions": 282,
+          "deletions": 147,
+          "changedFiles": 11
         },
         "2024-11-29": {
           "commitCount": 1,
@@ -35060,10 +35127,16 @@
           "changedFiles": 3
         },
         "2024-12-06": {
-          "commitCount": 2,
-          "additions": 33208,
-          "deletions": 16568,
-          "changedFiles": 1588
+          "commitCount": 9,
+          "additions": 139343,
+          "deletions": 59317,
+          "changedFiles": 5215
+        },
+        "2023-12-27": {
+          "commitCount": 1,
+          "additions": 0,
+          "deletions": 0,
+          "changedFiles": 0
         }
       },
       "commitsPerHour": {
@@ -35218,10 +35291,10 @@
           "changedFiles": 2281
         },
         "Mon, 10": {
-          "commitCount": 149,
-          "additions": 67573,
-          "deletions": 50304,
-          "changedFiles": 3102
+          "commitCount": 151,
+          "additions": 67577,
+          "deletions": 50305,
+          "changedFiles": 3104
         },
         "Tue, 20": {
           "commitCount": 29,
@@ -35272,10 +35345,10 @@
           "changedFiles": 163
         },
         "Fri, 09": {
-          "commitCount": 94,
-          "additions": 71098,
-          "deletions": 13093,
-          "changedFiles": 784
+          "commitCount": 97,
+          "additions": 177169,
+          "deletions": 55782,
+          "changedFiles": 4403
         },
         "Fri, 07": {
           "commitCount": 83,
@@ -35320,10 +35393,10 @@
           "changedFiles": 2134
         },
         "Fri, 10": {
-          "commitCount": 193,
-          "additions": 70785,
-          "deletions": 17072,
-          "changedFiles": 1679
+          "commitCount": 197,
+          "additions": 70849,
+          "deletions": 17132,
+          "changedFiles": 1687
         },
         "Tue, 06": {
           "commitCount": 34,
@@ -35332,16 +35405,16 @@
           "changedFiles": 313
         },
         "Thu, 16": {
-          "commitCount": 158,
-          "additions": 57500,
-          "deletions": 30341,
-          "changedFiles": 1977
+          "commitCount": 160,
+          "additions": 57584,
+          "deletions": 30349,
+          "changedFiles": 1984
         },
         "Mon, 09": {
-          "commitCount": 80,
-          "additions": 54323,
-          "deletions": 18049,
-          "changedFiles": 1708
+          "commitCount": 83,
+          "additions": 54436,
+          "deletions": 18128,
+          "changedFiles": 1711
         },
         "Wed, 17": {
           "commitCount": 105,
@@ -35404,10 +35477,10 @@
           "changedFiles": 481
         },
         "Thu, 17": {
-          "commitCount": 94,
+          "commitCount": 95,
           "additions": 6047,
-          "deletions": 11597,
-          "changedFiles": 463
+          "deletions": 11599,
+          "changedFiles": 464
         },
         "Thu, 09": {
           "commitCount": 83,
@@ -35494,7 +35567,7 @@
           "changedFiles": 290
         },
         "Wed, 21": {
-          "commitCount": 8,
+          "commitCount": 9,
           "additions": 3721,
           "deletions": 699,
           "changedFiles": 179
