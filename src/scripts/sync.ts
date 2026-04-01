@@ -1,22 +1,11 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { GetAllGitHubContributions } from "get-all-github-contributions";
 import type { ImportData, ImportConfig } from "get-all-github-contributions";
-import { encrypt, decrypt, loadConfig, DATA_DIR, ENCRYPTED_PATH } from "./shared.js";
+import { DATA_DIR, ENCRYPTED_PATH, ENCRYPTION_KEY, GH_PAT, GITHUB_USERNAME } from "../constants.js";
+import { decrypt, encrypt } from "../util/crypto.js";
+import { loadConfig } from "../util/loadConfig.js";
 
 async function main() {
-  if (!process.env.ENCRYPTION_KEY) throw new Error("ENCRYPTION_KEY env var is required");
-  if (!process.env.GH_PAT) throw new Error("GH_PAT env var is required");
-  if (!process.env.GITHUB_USERNAME) throw new Error("GITHUB_USERNAME env var is required");
-
-  const encryptionKey = Buffer.from(process.env.ENCRYPTION_KEY, "hex");
-  if (encryptionKey.length !== 32) {
-    throw new Error(
-      `ENCRYPTION_KEY must be a 64-character hex string (got ${process.env.ENCRYPTION_KEY.length} chars)`,
-    );
-  }
-  const ghPat = process.env.GH_PAT;
-  const username = process.env.GITHUB_USERNAME;
-
   // Ensure data dir
   if (!existsSync(DATA_DIR)) {
     mkdirSync(DATA_DIR, { recursive: true });
@@ -26,7 +15,7 @@ async function main() {
   let importData: ImportData;
   if (existsSync(ENCRYPTED_PATH)) {
     const raw = readFileSync(ENCRYPTED_PATH);
-    const decrypted = decrypt(raw, encryptionKey);
+    const decrypted = decrypt(raw, ENCRYPTION_KEY);
     importData = JSON.parse(decrypted.toString("utf-8"));
   } else {
     importData = {
@@ -38,7 +27,7 @@ async function main() {
 
   // Save helper
   function saveState() {
-    const encrypted = encrypt(Buffer.from(JSON.stringify(importData)), encryptionKey);
+    const encrypted = encrypt(Buffer.from(JSON.stringify(importData)), ENCRYPTION_KEY);
     writeFileSync(ENCRYPTED_PATH, encrypted);
   }
 
@@ -56,7 +45,7 @@ async function main() {
     process.exit(0);
   });
 
-  // 3. Load config and sync
+  // 3. Load config
   const userConfig = loadConfig();
   const importOptions: ImportConfig["import"] =
     userConfig.skip || userConfig.concurrency || userConfig.maxRetries || userConfig.pageSize || userConfig.rateLimitGracePeriod
@@ -69,10 +58,11 @@ async function main() {
         }
       : undefined;
   const config: ImportConfig = {
-    tokens: { [username]: ghPat },
+    tokens: { [GITHUB_USERNAME]: GH_PAT },
     import: importOptions,
   };
 
+  // Sync data
   const syncer = new GetAllGitHubContributions({ config, data: importData });
   try {
     await syncer.sync();
