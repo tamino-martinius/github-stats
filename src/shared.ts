@@ -32,6 +32,8 @@ export interface Config {
   timeZone?: string;
   concurrency?: number;
   maxRetries?: number;
+  pageSize?: number;
+  rateLimitGracePeriod?: number;
   skip?: {
     organizations?: string[];
     repositories?: string[];

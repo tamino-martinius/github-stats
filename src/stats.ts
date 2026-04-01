@@ -2,37 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import type { ImportData } from "get-all-github-contributions";
 import { decrypt, loadConfig, ENCRYPTED_PATH, STATS_PATH, COMMIT_MSG_PATH } from "./shared.js";
-
-interface CommitStats {
-  commitCount: number;
-  additions: number;
-  deletions: number;
-  changedFiles: number;
-}
-
-interface RepoStats {
-  name?: string;
-  url?: string;
-  languages?: string[];
-  commitsPerDate: Record<string, CommitStats>; // yyyy-MM-dd
-  commitsPerHour: Record<string, CommitStats>; // ddd, hh
-}
-
-interface AccountStats {
-  user: {
-    username: string;
-    avatarUrl: string;
-    url: string;
-  };
-  organizations: {
-    [key: string]: {
-      avatarUrl: string;
-      url: string;
-    };
-  };
-  languageColors: { [key: string]: string };
-  repositories: RepoStats[];
-}
+import { AccountStats, CommitStats, RepoStats } from "./types.js";
 
 function isExcluded(repoFullName: string, excludeList: string[]): boolean {
   const hash = createHash("sha256").update(repoFullName).digest("hex");
@@ -136,16 +106,6 @@ function main() {
   const raw = readFileSync(ENCRYPTED_PATH);
   const importData: ImportData = JSON.parse(decrypt(raw, encryptionKey).toString("utf-8"));
 
-  // Check for new data
-  const hasNewData = Object.values(
-    importData.importState?.accountProgress?.[username]?.progressStats?.new ?? {},
-  ).some((v) => typeof v === "number" && v > 0);
-
-  if (!hasNewData) {
-    console.log("No new data, skipping stats update");
-    return;
-  }
-
   if (!Object.keys(importData.accounts).length) {
     console.log("No account data, skipping stats update");
     return;
@@ -161,8 +121,6 @@ function main() {
   const newProgress = importData.importState?.accountProgress?.[username]?.progressStats?.new;
   const descriptionLines: string[] = [];
   if (newProgress) {
-    if (newProgress.repoCount > 0) descriptionLines.push(`${newProgress.repoCount} new repos`);
-    if (newProgress.branchCount > 0) descriptionLines.push(`${newProgress.branchCount} new branches`);
     if (newProgress.commitCount > 0) descriptionLines.push(`${newProgress.commitCount} new commits`);
     if (newProgress.additionCount > 0) descriptionLines.push(`${newProgress.additionCount} additions`);
     if (newProgress.deletionCount > 0) descriptionLines.push(`${newProgress.deletionCount} deletions`);
