@@ -54,7 +54,7 @@ jobs:
       - run: npm ci
 
       - run: npm run sync
-        timeout-minutes: 60
+        timeout-minutes: 15
         continue-on-error: true
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
@@ -63,6 +63,7 @@ jobs:
 
       - run: npm run stats
         env:
+          GH_PAT: ${{ secrets.GH_PAT }}
           ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
 

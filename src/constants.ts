@@ -12,7 +12,7 @@ export const CONFIG_PATH = join(process.cwd(), "config.json");
 if (!process.env.ENCRYPTION_KEY) throw new Error("ENCRYPTION_KEY env var is required");
 if (!process.env.GH_PAT) throw new Error("GH_PAT env var is required");
 if (!process.env.GITHUB_USERNAME) throw new Error("GITHUB_USERNAME env var is required");
-if (process.env.ENCRYPTION_KEY.length !== 32) {
+if (process.env.ENCRYPTION_KEY.length !== 64) {
   throw new Error(
     `ENCRYPTION_KEY must be a 64-character hex string (got ${process.env.ENCRYPTION_KEY.length} chars)`,
   );
