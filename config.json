@@ -3,5 +3,6 @@
   "exclude": [
     "tamino-martinius/github-stats"
   ],
-  "timeZone": "CET"
+  "timeZone": "CET",
+  "recheckWithRemainingRateLimit": true
 }
