@@ -4,6 +4,7 @@ export interface Config {
   maxRetries: number;
   pageSize: number;
   rateLimitGracePeriod: number;
+  recheckWithRemainingRateLimit: boolean;
   exclude: string[];
   skip?: {
     organizations?: string[];

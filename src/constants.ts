@@ -31,4 +31,5 @@ export const DEFAULT_CONFIG: Config = {
   maxRetries: 2,
   pageSize: 50,
   rateLimitGracePeriod: 1000,
+  recheckWithRemainingRateLimit: false,
 };
