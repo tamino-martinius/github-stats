@@ -10,7 +10,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "get-all-github-contributions": "^0.1.6"
+    "get-all-github-contributions": "^0.1.7"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
