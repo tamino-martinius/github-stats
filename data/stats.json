@@ -33106,6 +33106,33 @@
     },
     {
       "public": {
+        "name": "meteor-up",
+        "url": "https://github.com/shyftplan/meteor-up",
+        "languages": [
+          "JavaScript",
+          "Shell"
+        ],
+        "description": ""
+      },
+      "commitsPerDate": {
+        "2016-08-23": {
+          "commitCount": 1,
+          "additions": 21,
+          "deletions": 8,
+          "changedFiles": 4
+        }
+      },
+      "commitsPerHour": {
+        "Tue, 10": {
+          "commitCount": 1,
+          "additions": 21,
+          "deletions": 8,
+          "changedFiles": 4
+        }
+      }
+    },
+    {
+      "public": {
         "name": "grape-swagger-rails",
         "url": "https://github.com/shyftplan/grape-swagger-rails",
         "languages": [
@@ -33670,6 +33697,24 @@
           "additions": 1,
           "deletions": 0,
           "changedFiles": 1
+        }
+      }
+    },
+    {
+      "commitsPerDate": {
+        "2018-01-22": {
+          "commitCount": 2,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 2
+        }
+      },
+      "commitsPerHour": {
+        "Mon, 16": {
+          "commitCount": 2,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 2
         }
       }
     },
@@ -60507,6 +60552,60 @@
     },
     {
       "commitsPerDate": {
+        "2021-03-07": {
+          "commitCount": 2,
+          "additions": 394,
+          "deletions": 30,
+          "changedFiles": 7
+        },
+        "2021-03-05": {
+          "commitCount": 4,
+          "additions": 172,
+          "deletions": 75,
+          "changedFiles": 10
+        },
+        "2021-03-04": {
+          "commitCount": 1,
+          "additions": 5558,
+          "deletions": 0,
+          "changedFiles": 8
+        }
+      },
+      "commitsPerHour": {
+        "Sun, 19": {
+          "commitCount": 1,
+          "additions": 390,
+          "deletions": 28,
+          "changedFiles": 5
+        },
+        "Sun, 16": {
+          "commitCount": 1,
+          "additions": 4,
+          "deletions": 2,
+          "changedFiles": 2
+        },
+        "Fri, 21": {
+          "commitCount": 2,
+          "additions": 125,
+          "deletions": 51,
+          "changedFiles": 5
+        },
+        "Fri, 09": {
+          "commitCount": 2,
+          "additions": 47,
+          "deletions": 24,
+          "changedFiles": 5
+        },
+        "Thu, 20": {
+          "commitCount": 1,
+          "additions": 5558,
+          "deletions": 0,
+          "changedFiles": 8
+        }
+      }
+    },
+    {
+      "commitsPerDate": {
         "2021-03-13": {
           "commitCount": 1,
           "additions": 63,
@@ -60634,6 +60733,60 @@
           "additions": 6199,
           "deletions": 0,
           "changedFiles": 11
+        }
+      }
+    },
+    {
+      "commitsPerDate": {
+        "2021-03-21": {
+          "commitCount": 1,
+          "additions": 7528,
+          "deletions": 0,
+          "changedFiles": 65
+        }
+      },
+      "commitsPerHour": {
+        "Sun, 17": {
+          "commitCount": 1,
+          "additions": 7528,
+          "deletions": 0,
+          "changedFiles": 65
+        }
+      }
+    },
+    {
+      "commitsPerDate": {
+        "2021-09-13": {
+          "commitCount": 1,
+          "additions": 2233872,
+          "deletions": 0,
+          "changedFiles": 22662
+        }
+      },
+      "commitsPerHour": {
+        "Mon, 15": {
+          "commitCount": 1,
+          "additions": 2233872,
+          "deletions": 0,
+          "changedFiles": 22662
+        }
+      }
+    },
+    {
+      "commitsPerDate": {
+        "2025-08-06": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 0,
+          "changedFiles": 1
+        }
+      },
+      "commitsPerHour": {
+        "Wed, 21": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 0,
+          "changedFiles": 1
         }
       }
     },
