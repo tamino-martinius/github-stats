@@ -10735,14 +10735,12 @@
     },
     {
       "public": {
-        "name": "contributions.taminomartinius.de",
-        "url": "https://github.com/tamino-martinius/contributions.taminomartinius.de",
+        "name": "metrics.tamino.dev",
+        "url": "https://github.com/tamino-martinius/metrics.tamino.dev",
         "languages": [
           "TypeScript",
           "HTML",
-          "JavaScript",
-          "CSS",
-          "Shell"
+          "CSS"
         ],
         "description": "Website to display a bunch of different commit statistics fetched by GitHub GraphQL API",
         "stargazerCount": 147,
@@ -10864,10 +10862,10 @@
           "changedFiles": 19
         },
         "2026-04-03": {
-          "commitCount": 6,
-          "additions": 504,
-          "deletions": 761,
-          "changedFiles": 23
+          "commitCount": 21,
+          "additions": 7319,
+          "deletions": 21180,
+          "changedFiles": 233
         },
         "2026-04-02": {
           "commitCount": 5,
@@ -10968,10 +10966,10 @@
           "changedFiles": 9
         },
         "Fri, 22": {
-          "commitCount": 4,
-          "additions": 221,
-          "deletions": 8,
-          "changedFiles": 4
+          "commitCount": 9,
+          "additions": 363,
+          "deletions": 92,
+          "changedFiles": 21
         },
         "Fri, 18": {
           "commitCount": 4,
@@ -11242,6 +11240,18 @@
           "additions": 2000,
           "deletions": 0,
           "changedFiles": 2
+        },
+        "Fri, 23": {
+          "commitCount": 4,
+          "additions": 502,
+          "deletions": 230,
+          "changedFiles": 23
+        },
+        "Fri, 21": {
+          "commitCount": 6,
+          "additions": 6171,
+          "deletions": 20105,
+          "changedFiles": 170
         }
       }
     },
@@ -33372,6 +33382,84 @@
           "additions": 452,
           "deletions": 0,
           "changedFiles": 8
+        }
+      }
+    },
+    {
+      "commitsPerDate": {
+        "2017-03-20": {
+          "commitCount": 5,
+          "additions": 143,
+          "deletions": 21,
+          "changedFiles": 8
+        },
+        "2017-03-13": {
+          "commitCount": 1,
+          "additions": 3183,
+          "deletions": 0,
+          "changedFiles": 10
+        },
+        "2017-06-08": {
+          "commitCount": 1,
+          "additions": 8,
+          "deletions": 0,
+          "changedFiles": 1
+        },
+        "2017-03-27": {
+          "commitCount": 3,
+          "additions": 2,
+          "deletions": 0,
+          "changedFiles": 3
+        },
+        "2017-03-24": {
+          "commitCount": 2,
+          "additions": 133,
+          "deletions": 123,
+          "changedFiles": 5
+        }
+      },
+      "commitsPerHour": {
+        "Mon, 10": {
+          "commitCount": 2,
+          "additions": 133,
+          "deletions": 9,
+          "changedFiles": 3
+        },
+        "Mon, 15": {
+          "commitCount": 1,
+          "additions": 3183,
+          "deletions": 0,
+          "changedFiles": 10
+        },
+        "Thu, 12": {
+          "commitCount": 1,
+          "additions": 8,
+          "deletions": 0,
+          "changedFiles": 1
+        },
+        "Mon, 09": {
+          "commitCount": 3,
+          "additions": 2,
+          "deletions": 0,
+          "changedFiles": 3
+        },
+        "Fri, 09": {
+          "commitCount": 2,
+          "additions": 133,
+          "deletions": 123,
+          "changedFiles": 5
+        },
+        "Mon, 12": {
+          "commitCount": 1,
+          "additions": 8,
+          "deletions": 4,
+          "changedFiles": 3
+        },
+        "Mon, 11": {
+          "commitCount": 2,
+          "additions": 2,
+          "deletions": 8,
+          "changedFiles": 2
         }
       }
     },
@@ -60608,6 +60696,32 @@
           "additions": 12697,
           "deletions": 0,
           "changedFiles": 33
+        }
+      }
+    },
+    {
+      "public": {
+        "name": "node--client",
+        "url": "https://github.com/hullt-com/node--client",
+        "languages": [
+          "TypeScript"
+        ],
+        "description": ""
+      },
+      "commitsPerDate": {
+        "2020-01-02": {
+          "commitCount": 1,
+          "additions": 17731,
+          "deletions": 0,
+          "changedFiles": 34
+        }
+      },
+      "commitsPerHour": {
+        "Thu, 15": {
+          "commitCount": 1,
+          "additions": 17731,
+          "deletions": 0,
+          "changedFiles": 34
         }
       }
     },
