@@ -60809,6 +60809,50 @@
       }
     },
     {
+      "public": {
+        "name": "iconists",
+        "url": "https://github.com/wearenextcode/iconists",
+        "languages": [
+          "HTML"
+        ],
+        "description": ""
+      },
+      "commitsPerDate": {
+        "2022-11-18": {
+          "commitCount": 5,
+          "additions": 176,
+          "deletions": 1,
+          "changedFiles": 6
+        }
+      },
+      "commitsPerHour": {
+        "Fri, 14": {
+          "commitCount": 5,
+          "additions": 176,
+          "deletions": 1,
+          "changedFiles": 6
+        }
+      }
+    },
+    {
+      "commitsPerDate": {
+        "2025-02-21": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 0,
+          "changedFiles": 1
+        }
+      },
+      "commitsPerHour": {
+        "Fri, 14": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 0,
+          "changedFiles": 1
+        }
+      }
+    },
+    {
       "commitsPerDate": {
         "2025-08-06": {
           "commitCount": 1,
