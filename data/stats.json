@@ -3474,10 +3474,9 @@
         "url": "https://github.com/tamino-martinius/tamino.dev",
         "languages": [
           "HTML",
-          "JavaScript",
           "Shell",
           "TypeScript",
-          "Vue"
+          "CSS"
         ],
         "description": "My personal website =)",
         "stargazerCount": 29,
@@ -3597,6 +3596,12 @@
           "additions": 4488,
           "deletions": 0,
           "changedFiles": 132
+        },
+        "2026-04-05": {
+          "commitCount": 2,
+          "additions": 3210,
+          "deletions": 10291,
+          "changedFiles": 101
         }
       },
       "commitsPerHour": {
@@ -3773,6 +3778,18 @@
           "additions": 58,
           "deletions": 17,
           "changedFiles": 9
+        },
+        "Sun, 18": {
+          "commitCount": 1,
+          "additions": 18,
+          "deletions": 650,
+          "changedFiles": 1
+        },
+        "Sun, 17": {
+          "commitCount": 1,
+          "additions": 3192,
+          "deletions": 9641,
+          "changedFiles": 100
         }
       }
     },
@@ -10880,10 +10897,10 @@
           "changedFiles": 48
         },
         "2026-04-05": {
-          "commitCount": 1,
-          "additions": 2233,
-          "deletions": 349,
-          "changedFiles": 61
+          "commitCount": 2,
+          "additions": 2508,
+          "deletions": 379,
+          "changedFiles": 69
         }
       },
       "commitsPerHour": {
@@ -11258,6 +11275,12 @@
           "additions": 6171,
           "deletions": 20105,
           "changedFiles": 170
+        },
+        "Sun, 15": {
+          "commitCount": 1,
+          "additions": 275,
+          "deletions": 30,
+          "changedFiles": 8
         }
       }
     },
@@ -30298,6 +30321,65 @@
       }
     },
     {
+      "public": {
+        "name": "errbit",
+        "url": "https://github.com/shyftplan/errbit",
+        "languages": [
+          "Ruby",
+          "HTML",
+          "JavaScript",
+          "CSS"
+        ],
+        "description": ""
+      },
+      "commitsPerDate": {
+        "2017-06-09": {
+          "commitCount": 1,
+          "additions": 4,
+          "deletions": 4,
+          "changedFiles": 1
+        },
+        "2015-02-23": {
+          "commitCount": 6,
+          "additions": 25,
+          "deletions": 35,
+          "changedFiles": 9
+        },
+        "2015-02-09": {
+          "commitCount": 6,
+          "additions": 26,
+          "deletions": 36,
+          "changedFiles": 9
+        }
+      },
+      "commitsPerHour": {
+        "Fri, 14": {
+          "commitCount": 1,
+          "additions": 4,
+          "deletions": 4,
+          "changedFiles": 1
+        },
+        "Mon, 10": {
+          "commitCount": 6,
+          "additions": 25,
+          "deletions": 35,
+          "changedFiles": 9
+        },
+        "Mon, 15": {
+          "commitCount": 1,
+          "additions": 0,
+          "deletions": 33,
+          "changedFiles": 1
+        },
+        "Mon, 14": {
+          "commitCount": 5,
+          "additions": 26,
+          "deletions": 3,
+          "changedFiles": 8
+        }
+      }
+    },
+    {
       "commitsPerDate": {
         "2015-02-09": {
           "commitCount": 1,
@@ -34792,6 +34874,24 @@
           "additions": 3,
           "deletions": 3,
           "changedFiles": 2
+        }
+      }
+    },
+    {
+      "commitsPerDate": {
+        "2019-02-08": {
+          "commitCount": 5,
+          "additions": 12,
+          "deletions": 107,
+          "changedFiles": 6
+        }
+      },
+      "commitsPerHour": {
+        "Fri, 08": {
+          "commitCount": 5,
+          "additions": 12,
+          "deletions": 107,
+          "changedFiles": 6
         }
       }
     },
@@ -63707,6 +63807,34 @@
           "additions": 751,
           "deletions": 0,
           "changedFiles": 18
+        }
+      }
+    },
+    {
+      "public": {
+        "name": "static.tamino.dev",
+        "url": "https://github.com/tamino-martinius/static.tamino.dev",
+        "languages": [
+          "HTML"
+        ],
+        "description": "Web accessible assets",
+        "stargazerCount": 0,
+        "forkCount": 0
+      },
+      "commitsPerDate": {
+        "2026-04-05": {
+          "commitCount": 1,
+          "additions": 34,
+          "deletions": 0,
+          "changedFiles": 6
+        }
+      },
+      "commitsPerHour": {
+        "Sun, 17": {
+          "commitCount": 1,
+          "additions": 34,
+          "deletions": 0,
+          "changedFiles": 6
         }
       }
     }
