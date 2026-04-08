@@ -33247,6 +33247,32 @@
     },
     {
       "public": {
+        "name": "graphql-tools",
+        "url": "https://github.com/shyftplan/graphql-tools",
+        "languages": [
+          "JavaScript"
+        ],
+        "description": ""
+      },
+      "commitsPerDate": {
+        "2016-08-11": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
+        }
+      },
+      "commitsPerHour": {
+        "Thu, 17": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
+        }
+      }
+    },
+    {
+      "public": {
         "name": "meteor-up",
         "url": "https://github.com/shyftplan/meteor-up",
         "languages": [
