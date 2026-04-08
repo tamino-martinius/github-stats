@@ -3474,7 +3474,6 @@
         "url": "https://github.com/tamino-martinius/tamino.dev",
         "languages": [
           "HTML",
-          "Shell",
           "TypeScript",
           "CSS"
         ],
@@ -3602,6 +3601,12 @@
           "additions": 3475,
           "deletions": 10374,
           "changedFiles": 105
+        },
+        "2026-04-08": {
+          "commitCount": 4,
+          "additions": 455,
+          "deletions": 189,
+          "changedFiles": 16
         }
       },
       "commitsPerHour": {
@@ -3618,10 +3623,10 @@
           "changedFiles": 4
         },
         "Wed, 18": {
-          "commitCount": 5,
-          "additions": 6200,
-          "deletions": 9705,
-          "changedFiles": 40
+          "commitCount": 7,
+          "additions": 6206,
+          "deletions": 9790,
+          "changedFiles": 50
         },
         "Sat, 09": {
           "commitCount": 7,
@@ -3796,6 +3801,18 @@
           "additions": 265,
           "deletions": 83,
           "changedFiles": 4
+        },
+        "Wed, 17": {
+          "commitCount": 1,
+          "additions": 162,
+          "deletions": 17,
+          "changedFiles": 1
+        },
+        "Wed, 16": {
+          "commitCount": 1,
+          "additions": 287,
+          "deletions": 87,
+          "changedFiles": 5
         }
       }
     },
@@ -6693,8 +6710,7 @@
         "name": "lets-talk-about--typescript",
         "url": "https://github.com/tamino-martinius/lets-talk-about--typescript",
         "languages": [
-          "Pug",
-          "Stylus"
+          "JavaScript"
         ],
         "description": "Lets talk about ... TypeScript",
         "stargazerCount": 1,
@@ -6748,6 +6764,12 @@
           "additions": 6858,
           "deletions": 116,
           "changedFiles": 64
+        },
+        "2026-04-08": {
+          "commitCount": 2,
+          "additions": 2990,
+          "deletions": 8265,
+          "changedFiles": 29
         }
       },
       "commitsPerHour": {
@@ -6828,6 +6850,18 @@
           "additions": 6395,
           "deletions": 0,
           "changedFiles": 17
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
+        },
+        "Wed, 15": {
+          "commitCount": 1,
+          "additions": 2989,
+          "deletions": 8264,
+          "changedFiles": 28
         }
       }
     },
@@ -6886,10 +6920,10 @@
           "changedFiles": 30
         },
         "2026-04-08": {
-          "commitCount": 2,
-          "additions": 3162,
-          "deletions": 6751,
-          "changedFiles": 40
+          "commitCount": 3,
+          "additions": 3163,
+          "deletions": 6752,
+          "changedFiles": 41
         }
       },
       "commitsPerHour": {
@@ -6982,6 +7016,12 @@
           "additions": 3162,
           "deletions": 6751,
           "changedFiles": 40
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
         }
       }
     },
@@ -7925,6 +7965,12 @@
           "additions": 23,
           "deletions": 2856,
           "changedFiles": 3
+        },
+        "2026-04-08": {
+          "commitCount": 2,
+          "additions": 2,
+          "deletions": 2,
+          "changedFiles": 2
         }
       },
       "commitsPerHour": {
@@ -8005,6 +8051,12 @@
           "additions": 23,
           "deletions": 2856,
           "changedFiles": 3
+        },
+        "Wed, 19": {
+          "commitCount": 2,
+          "additions": 2,
+          "deletions": 2,
+          "changedFiles": 2
         }
       }
     },
@@ -8013,8 +8065,7 @@
         "name": "lets-talk-about--sql-query-performance",
         "url": "https://github.com/tamino-martinius/lets-talk-about--sql-query-performance",
         "languages": [
-          "Pug",
-          "Stylus"
+          "JavaScript"
         ],
         "description": "Lets talk about ... SQL Query Performance",
         "stargazerCount": 0,
@@ -8050,6 +8101,12 @@
           "additions": 7035,
           "deletions": 2,
           "changedFiles": 44
+        },
+        "2026-04-08": {
+          "commitCount": 2,
+          "additions": 3055,
+          "deletions": 6743,
+          "changedFiles": 24
         }
       },
       "commitsPerHour": {
@@ -8094,6 +8151,18 @@
           "additions": 7035,
           "deletions": 2,
           "changedFiles": 44
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
+        },
+        "Wed, 15": {
+          "commitCount": 1,
+          "additions": 3054,
+          "deletions": 6742,
+          "changedFiles": 23
         }
       }
     },
@@ -8147,10 +8216,10 @@
           "changedFiles": 67
         },
         "2026-04-08": {
-          "commitCount": 3,
-          "additions": 3565,
-          "deletions": 7091,
-          "changedFiles": 38
+          "commitCount": 4,
+          "additions": 3566,
+          "deletions": 7092,
+          "changedFiles": 39
         }
       },
       "commitsPerHour": {
@@ -8207,6 +8276,12 @@
           "additions": 7,
           "deletions": 4,
           "changedFiles": 2
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
         }
       }
     },
@@ -9295,8 +9370,7 @@
         "name": "lets-talk-about--new-js-features--2018",
         "url": "https://github.com/tamino-martinius/lets-talk-about--new-js-features--2018",
         "languages": [
-          "Pug",
-          "Stylus"
+          "JavaScript"
         ],
         "description": "Lets Talk about ... Whats new (and upcoming) in JavaScript (2018 Edition)",
         "stargazerCount": 0,
@@ -9338,6 +9412,12 @@
           "additions": 6741,
           "deletions": 15,
           "changedFiles": 51
+        },
+        "2026-04-08": {
+          "commitCount": 2,
+          "additions": 3047,
+          "deletions": 6632,
+          "changedFiles": 27
         }
       },
       "commitsPerHour": {
@@ -9406,6 +9486,18 @@
           "additions": 6011,
           "deletions": 5,
           "changedFiles": 14
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 59,
+          "deletions": 8,
+          "changedFiles": 2
+        },
+        "Wed, 15": {
+          "commitCount": 1,
+          "additions": 2988,
+          "deletions": 6624,
+          "changedFiles": 25
         }
       }
     },
@@ -10721,10 +10813,10 @@
           "changedFiles": 51
         },
         "2026-04-08": {
-          "commitCount": 3,
-          "additions": 2867,
-          "deletions": 6397,
-          "changedFiles": 27
+          "commitCount": 4,
+          "additions": 2868,
+          "deletions": 6398,
+          "changedFiles": 28
         }
       },
       "commitsPerHour": {
@@ -10805,6 +10897,12 @@
           "additions": 2867,
           "deletions": 6397,
           "changedFiles": 27
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
         }
       }
     },
@@ -19400,8 +19498,7 @@
         "name": "lets-talk-about--new-js-features--2019",
         "url": "https://github.com/tamino-martinius/lets-talk-about--new-js-features--2019",
         "languages": [
-          "Pug",
-          "Stylus"
+          "JavaScript"
         ],
         "description": "Lets Talk about ... Whats new (and upcoming) in JavaScript (2019 Edition)",
         "stargazerCount": 0,
@@ -19449,6 +19546,12 @@
           "additions": 6741,
           "deletions": 15,
           "changedFiles": 51
+        },
+        "2026-04-08": {
+          "commitCount": 2,
+          "additions": 3677,
+          "deletions": 7007,
+          "changedFiles": 26
         }
       },
       "commitsPerHour": {
@@ -19529,6 +19632,18 @@
           "additions": 6011,
           "deletions": 5,
           "changedFiles": 14
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
+        },
+        "Wed, 15": {
+          "commitCount": 1,
+          "additions": 3676,
+          "deletions": 7006,
+          "changedFiles": 25
         }
       }
     },
@@ -20377,10 +20492,10 @@
           "changedFiles": 51
         },
         "2026-04-08": {
-          "commitCount": 2,
-          "additions": 2741,
-          "deletions": 6293,
-          "changedFiles": 36
+          "commitCount": 3,
+          "additions": 2742,
+          "deletions": 6294,
+          "changedFiles": 37
         }
       },
       "commitsPerHour": {
@@ -20467,6 +20582,12 @@
           "additions": 2741,
           "deletions": 6293,
           "changedFiles": 36
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
         }
       }
     },
@@ -20863,10 +20984,10 @@
           "changedFiles": 5
         },
         "2026-04-08": {
-          "commitCount": 2,
-          "additions": 2998,
-          "deletions": 8054,
-          "changedFiles": 29
+          "commitCount": 3,
+          "additions": 2999,
+          "deletions": 8055,
+          "changedFiles": 30
         }
       },
       "commitsPerHour": {
@@ -20947,6 +21068,12 @@
           "additions": 2998,
           "deletions": 8054,
           "changedFiles": 29
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
         }
       }
     },
@@ -22849,6 +22976,12 @@
           "additions": 3384,
           "deletions": 6760,
           "changedFiles": 23
+        },
+        "2026-04-08": {
+          "commitCount": 2,
+          "additions": 41,
+          "deletions": 59,
+          "changedFiles": 5
         }
       },
       "commitsPerHour": {
@@ -22947,6 +23080,18 @@
           "additions": 3384,
           "deletions": 6760,
           "changedFiles": 23
+        },
+        "Wed, 15": {
+          "commitCount": 1,
+          "additions": 16,
+          "deletions": 55,
+          "changedFiles": 3
+        },
+        "Wed, 18": {
+          "commitCount": 1,
+          "additions": 25,
+          "deletions": 4,
+          "changedFiles": 2
         }
       }
     },
@@ -23013,10 +23158,10 @@
           "changedFiles": 51
         },
         "2026-04-08": {
-          "commitCount": 1,
-          "additions": 3169,
-          "deletions": 6407,
-          "changedFiles": 25
+          "commitCount": 2,
+          "additions": 3170,
+          "deletions": 6408,
+          "changedFiles": 26
         }
       },
       "commitsPerHour": {
@@ -23103,6 +23248,12 @@
           "additions": 3169,
           "deletions": 6407,
           "changedFiles": 25
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
         }
       }
     },
@@ -23111,7 +23262,7 @@
         "name": "lets-talk-about--never-change-a-running-system",
         "url": "https://github.com/tamino-martinius/lets-talk-about--never-change-a-running-system",
         "languages": [
-          "HTML"
+          "JavaScript"
         ],
         "description": "",
         "stargazerCount": 0,
@@ -23119,30 +23270,126 @@
       },
       "commitsPerDate": {
         "2021-01-22": {
-          "commitCount": 2,
-          "additions": 2,
-          "deletions": 4,
-          "changedFiles": 3
+          "commitCount": 5,
+          "additions": 101,
+          "deletions": 67,
+          "changedFiles": 9
         },
         "2020-09-24": {
-          "commitCount": 4,
-          "additions": 17,
-          "deletions": 1,
-          "changedFiles": 11
+          "commitCount": 15,
+          "additions": 4918,
+          "deletions": 8203,
+          "changedFiles": 63
+        },
+        "2026-04-08": {
+          "commitCount": 2,
+          "additions": 2725,
+          "deletions": 6278,
+          "changedFiles": 28
+        },
+        "2019-06-22": {
+          "commitCount": 1,
+          "additions": 3,
+          "deletions": 2,
+          "changedFiles": 2
+        },
+        "2019-06-17": {
+          "commitCount": 2,
+          "additions": 1879,
+          "deletions": 2886,
+          "changedFiles": 6
+        },
+        "2018-07-21": {
+          "commitCount": 6,
+          "additions": 6953,
+          "deletions": 2221,
+          "changedFiles": 7
+        },
+        "2018-06-14": {
+          "commitCount": 1,
+          "additions": 4667,
+          "deletions": 5177,
+          "changedFiles": 1
+        },
+        "2018-02-18": {
+          "commitCount": 10,
+          "additions": 6741,
+          "deletions": 15,
+          "changedFiles": 51
         }
       },
       "commitsPerHour": {
         "Fri, 09": {
-          "commitCount": 2,
-          "additions": 2,
-          "deletions": 4,
-          "changedFiles": 3
+          "commitCount": 5,
+          "additions": 101,
+          "deletions": 67,
+          "changedFiles": 9
         },
         "Thu, 10": {
-          "commitCount": 4,
-          "additions": 17,
+          "commitCount": 14,
+          "additions": 4918,
+          "deletions": 8202,
+          "changedFiles": 62
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
           "deletions": 1,
-          "changedFiles": 11
+          "changedFiles": 1
+        },
+        "Wed, 15": {
+          "commitCount": 1,
+          "additions": 2724,
+          "deletions": 6277,
+          "changedFiles": 27
+        },
+        "Thu, 11": {
+          "commitCount": 2,
+          "additions": 4667,
+          "deletions": 5178,
+          "changedFiles": 2
+        },
+        "Sat, 09": {
+          "commitCount": 1,
+          "additions": 3,
+          "deletions": 2,
+          "changedFiles": 2
+        },
+        "Mon, 07": {
+          "commitCount": 2,
+          "additions": 1879,
+          "deletions": 2886,
+          "changedFiles": 6
+        },
+        "Sat, 11": {
+          "commitCount": 5,
+          "additions": 6952,
+          "deletions": 2220,
+          "changedFiles": 6
+        },
+        "Sat, 10": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
+        },
+        "Sun, 19": {
+          "commitCount": 3,
+          "additions": 2,
+          "deletions": 0,
+          "changedFiles": 3
+        },
+        "Sun, 18": {
+          "commitCount": 5,
+          "additions": 728,
+          "deletions": 10,
+          "changedFiles": 34
+        },
+        "Sun, 17": {
+          "commitCount": 2,
+          "additions": 6011,
+          "deletions": 5,
+          "changedFiles": 14
         }
       }
     },
@@ -23151,8 +23398,7 @@
         "name": "lets-talk-about--api-workshop-1",
         "url": "https://github.com/tamino-martinius/lets-talk-about--api-workshop-1",
         "languages": [
-          "Pug",
-          "Stylus"
+          "JavaScript"
         ],
         "description": "",
         "stargazerCount": 0,
@@ -23200,6 +23446,12 @@
           "additions": 6741,
           "deletions": 15,
           "changedFiles": 51
+        },
+        "2026-04-08": {
+          "commitCount": 2,
+          "additions": 2878,
+          "deletions": 6401,
+          "changedFiles": 25
         }
       },
       "commitsPerHour": {
@@ -23262,6 +23514,18 @@
           "additions": 6011,
           "deletions": 5,
           "changedFiles": 14
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
+        },
+        "Wed, 15": {
+          "commitCount": 1,
+          "additions": 2877,
+          "deletions": 6400,
+          "changedFiles": 24
         }
       }
     },
@@ -24018,10 +24282,10 @@
           "changedFiles": 58
         },
         "2026-04-08": {
-          "commitCount": 1,
-          "additions": 3295,
-          "deletions": 8187,
-          "changedFiles": 32
+          "commitCount": 2,
+          "additions": 3296,
+          "deletions": 8188,
+          "changedFiles": 33
         },
         "2019-12-16": {
           "commitCount": 1,
@@ -24168,6 +24432,12 @@
           "additions": 6011,
           "deletions": 5,
           "changedFiles": 14
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
         }
       }
     },
@@ -24456,6 +24726,12 @@
           "additions": 785,
           "deletions": 687,
           "changedFiles": 30
+        },
+        "2026-04-08": {
+          "commitCount": 1,
+          "additions": 5,
+          "deletions": 5,
+          "changedFiles": 1
         }
       },
       "commitsPerHour": {
@@ -24506,6 +24782,12 @@
           "additions": 87,
           "deletions": 19,
           "changedFiles": 3
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 5,
+          "deletions": 5,
+          "changedFiles": 1
         }
       }
     },
@@ -58470,10 +58752,10 @@
           "changedFiles": 19
         },
         "2024-10-01": {
-          "commitCount": 3,
-          "additions": 35,
-          "deletions": 11,
-          "changedFiles": 8
+          "commitCount": 4,
+          "additions": 1761,
+          "deletions": 232,
+          "changedFiles": 77
         },
         "2024-09-30": {
           "commitCount": 4,
@@ -58494,10 +58776,10 @@
           "changedFiles": 27
         },
         "2024-09-19": {
-          "commitCount": 3,
-          "additions": 16,
-          "deletions": 19,
-          "changedFiles": 8
+          "commitCount": 5,
+          "additions": 25,
+          "deletions": 31,
+          "changedFiles": 10
         },
         "2024-09-12": {
           "commitCount": 3,
@@ -59078,10 +59360,10 @@
           "changedFiles": 2384
         },
         "Thu, 15": {
-          "commitCount": 181,
-          "additions": 24789,
-          "deletions": 21627,
-          "changedFiles": 1348
+          "commitCount": 182,
+          "additions": 24797,
+          "deletions": 21638,
+          "changedFiles": 1349
         },
         "Wed, 13": {
           "commitCount": 144,
@@ -59294,10 +59576,10 @@
           "changedFiles": 313
         },
         "Thu, 16": {
-          "commitCount": 160,
-          "additions": 57584,
-          "deletions": 30349,
-          "changedFiles": 1984
+          "commitCount": 161,
+          "additions": 57585,
+          "deletions": 30350,
+          "changedFiles": 1985
         },
         "Mon, 09": {
           "commitCount": 84,
@@ -59690,10 +59972,10 @@
           "changedFiles": 3
         },
         "Tue, 00": {
-          "commitCount": 4,
-          "additions": 22,
-          "deletions": 22,
-          "changedFiles": 4
+          "commitCount": 5,
+          "additions": 1748,
+          "deletions": 243,
+          "changedFiles": 73
         },
         "Sat, 16": {
           "commitCount": 1,
