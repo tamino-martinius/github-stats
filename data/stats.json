@@ -4356,7 +4356,8 @@
         "name": "node-next-model",
         "url": "https://github.com/tamino-martinius/node-next-model",
         "languages": [
-          "TypeScript"
+          "TypeScript",
+          "JavaScript"
         ],
         "description": "Rails like models using ES6.",
         "stargazerCount": 4,
@@ -4904,10 +4905,10 @@
           "changedFiles": 446
         },
         "2026-04-24": {
-          "commitCount": 84,
-          "additions": 75083,
-          "deletions": 62854,
-          "changedFiles": 1476
+          "commitCount": 114,
+          "additions": 87477,
+          "deletions": 63769,
+          "changedFiles": 1931
         }
       },
       "commitsPerHour": {
@@ -5068,16 +5069,16 @@
           "changedFiles": 29
         },
         "Fri, 17": {
-          "commitCount": 7,
-          "additions": 1383,
-          "deletions": 564,
-          "changedFiles": 20
+          "commitCount": 9,
+          "additions": 1908,
+          "deletions": 565,
+          "changedFiles": 31
         },
         "Fri, 15": {
-          "commitCount": 4,
-          "additions": 174,
-          "deletions": 138,
-          "changedFiles": 5
+          "commitCount": 21,
+          "additions": 9409,
+          "deletions": 640,
+          "changedFiles": 368
         },
         "Fri, 08": {
           "commitCount": 18,
@@ -5098,10 +5099,10 @@
           "changedFiles": 19
         },
         "Fri, 18": {
-          "commitCount": 1,
-          "additions": 14,
-          "deletions": 26,
-          "changedFiles": 1
+          "commitCount": 9,
+          "additions": 1548,
+          "deletions": 283,
+          "changedFiles": 49
         },
         "Sun, 18": {
           "commitCount": 2,
@@ -5278,10 +5279,10 @@
           "changedFiles": 9
         },
         "Fri, 14": {
-          "commitCount": 8,
-          "additions": 4162,
-          "deletions": 221,
-          "changedFiles": 139
+          "commitCount": 11,
+          "additions": 5262,
+          "deletions": 376,
+          "changedFiles": 172
         },
         "Fri, 10": {
           "commitCount": 22,
