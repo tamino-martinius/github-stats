@@ -67836,6 +67836,12 @@
           "additions": 2868,
           "deletions": 344,
           "changedFiles": 48
+        },
+        "2026-05-21": {
+          "commitCount": 1,
+          "additions": 829,
+          "deletions": 25,
+          "changedFiles": 31
         }
       },
       "commitsPerHour": {
@@ -67864,10 +67870,10 @@
           "changedFiles": 15
         },
         "Thu, 11": {
-          "commitCount": 1,
-          "additions": 1,
-          "deletions": 0,
-          "changedFiles": 1
+          "commitCount": 2,
+          "additions": 830,
+          "deletions": 25,
+          "changedFiles": 32
         },
         "Thu, 17": {
           "commitCount": 1,
@@ -67958,6 +67964,67 @@
           "additions": 59,
           "deletions": 0,
           "changedFiles": 2
+        }
+      }
+    },
+    {
+      "public": {
+        "name": "talks",
+        "url": "https://github.com/tamino-martinius/talks",
+        "languages": [
+          "JavaScript",
+          "CSS",
+          "TypeScript",
+          "HTML"
+        ],
+        "description": "Monorepo for lets-talk-about presentations. Deployed to https://talks.tamino.dev/{talk-name}/.",
+        "stargazerCount": 0,
+        "forkCount": 0
+      },
+      "commitsPerDate": {
+        "2026-05-21": {
+          "commitCount": 33,
+          "additions": 156600,
+          "deletions": 38435,
+          "changedFiles": 938
+        }
+      },
+      "commitsPerHour": {
+        "Thu, 18": {
+          "commitCount": 1,
+          "additions": 18,
+          "deletions": 18,
+          "changedFiles": 17
+        },
+        "Thu, 10": {
+          "commitCount": 3,
+          "additions": 1981,
+          "deletions": 38417,
+          "changedFiles": 44
+        },
+        "Thu, 09": {
+          "commitCount": 29,
+          "additions": 154601,
+          "deletions": 0,
+          "changedFiles": 877
+        }
+      }
+    },
+    {
+      "commitsPerDate": {
+        "2026-05-21": {
+          "commitCount": 1,
+          "additions": 0,
+          "deletions": 0,
+          "changedFiles": 1
+        }
+      },
+      "commitsPerHour": {
+        "Thu, 12": {
+          "commitCount": 1,
+          "additions": 0,
+          "deletions": 0,
+          "changedFiles": 1
         }
       }
     }
