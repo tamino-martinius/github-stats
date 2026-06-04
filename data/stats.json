@@ -9784,7 +9784,8 @@
         "name": "node-ts-dedent",
         "url": "https://github.com/tamino-martinius/node-ts-dedent",
         "languages": [
-          "TypeScript"
+          "TypeScript",
+          "JavaScript"
         ],
         "description": "TypeScript package which smartly trims and strips indentation from multi-line strings",
         "stargazerCount": 177,
@@ -9870,10 +9871,10 @@
           "changedFiles": 47
         },
         "2026-06-04": {
-          "commitCount": 1,
-          "additions": 804,
-          "deletions": 104,
-          "changedFiles": 19
+          "commitCount": 12,
+          "additions": 7201,
+          "deletions": 11212,
+          "changedFiles": 57
         }
       },
       "commitsPerHour": {
@@ -9998,10 +9999,10 @@
           "changedFiles": 2
         },
         "Thu, 10": {
-          "commitCount": 8,
-          "additions": 265,
-          "deletions": 65,
-          "changedFiles": 9
+          "commitCount": 12,
+          "additions": 6525,
+          "deletions": 11143,
+          "changedFiles": 35
         },
         "Thu, 07": {
           "commitCount": 7,
@@ -10092,6 +10093,18 @@
           "additions": 804,
           "deletions": 104,
           "changedFiles": 19
+        },
+        "Thu, 14": {
+          "commitCount": 5,
+          "additions": 129,
+          "deletions": 24,
+          "changedFiles": 8
+        },
+        "Thu, 11": {
+          "commitCount": 2,
+          "additions": 8,
+          "deletions": 6,
+          "changedFiles": 4
         }
       }
     },
