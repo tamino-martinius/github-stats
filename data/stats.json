@@ -6,7 +6,7 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/3111766?u=dc22466bd97064e00ca1341769e3ad0a5ba08737&v=4",
     "url": "https://github.com/tamino-martinius",
     "gistCount": 0,
-    "followerCount": 157,
+    "followerCount": 158,
     "followingCount": 13,
     "commentsPerDate": {
       "2014-11-25": 1,
@@ -3483,7 +3483,7 @@
           "TypeScript",
           "CSS"
         ],
-        "description": "My personal website =)",
+        "description": "My personal website, easy to fork and adjust for your bio",
         "stargazerCount": 29,
         "forkCount": 15
       },
@@ -3631,6 +3631,12 @@
           "additions": 10,
           "deletions": 24,
           "changedFiles": 2
+        },
+        "2026-06-10": {
+          "commitCount": 2,
+          "additions": 358,
+          "deletions": 4,
+          "changedFiles": 6
         }
       },
       "commitsPerHour": {
@@ -3867,6 +3873,12 @@
           "additions": 5,
           "deletions": 12,
           "changedFiles": 1
+        },
+        "Wed, 11": {
+          "commitCount": 2,
+          "additions": 358,
+          "deletions": 4,
+          "changedFiles": 6
         }
       }
     },
@@ -9158,8 +9170,8 @@
           "JavaScript"
         ],
         "description": "Four different menu animations for menu button toggle between hamburger, cross and back icon.",
-        "stargazerCount": 176,
-        "forkCount": 10
+        "stargazerCount": 177,
+        "forkCount": 11
       },
       "commitsPerDate": {
         "2018-08-11": {
