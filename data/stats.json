@@ -9169,7 +9169,7 @@
           "CSS",
           "JavaScript"
         ],
-        "description": "Four different menu animations for menu button toggle between hamburger, cross and back icon.",
+        "description": "Menu animations and all my other UI snippets together in one repo",
         "stargazerCount": 177,
         "forkCount": 11
       },
@@ -68703,10 +68703,10 @@
           "changedFiles": 32
         },
         "2026-06-10": {
-          "commitCount": 3,
-          "additions": 758,
-          "deletions": 34,
-          "changedFiles": 10
+          "commitCount": 6,
+          "additions": 1056,
+          "deletions": 242,
+          "changedFiles": 14
         }
       },
       "commitsPerHour": {
@@ -68811,6 +68811,12 @@
           "additions": 758,
           "deletions": 34,
           "changedFiles": 10
+        },
+        "Wed, 17": {
+          "commitCount": 3,
+          "additions": 298,
+          "deletions": 208,
+          "changedFiles": 4
         }
       }
     }
