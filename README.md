@@ -68,6 +68,8 @@ Create or edit `config.json` on your user branch (see `config.schema.json` for t
 | `maxRetries` | Maximum retries for failed API requests |
 | `pageSize` | Number of items per page for GraphQL pagination (default: `50`) |
 | `rateLimitGracePeriod` | Grace period in ms added when waiting for rate limit reset (default: `1000`) |
+| `branchRecheckBuckets` | Spread non-default branch commit fetches across this many runs — each run syncs every default branch plus a deterministic `1/N` slice of the other branches, so all branches are covered within `N` runs (default: `0` = disabled). Use to cut API usage per run when tracking many branches |
+| `incrementalHistory` | For branches already synced once, fetch only commits newer than the last one seen instead of re-paginating full history (default: `false`) |
 | `skip.organizations` | Organizations to skip entirely during sync |
 | `skip.repositories` | Repositories to skip entirely during sync (`owner/repo`) |
 | `exclude` | Repositories to exclude from aggregated stats but still sync. Use `owner/repo` for public repos or `sha256:<hash>` for private repos where the hash is `echo -n "owner/repo" \| sha256sum` |

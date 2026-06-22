@@ -32,4 +32,6 @@ export const DEFAULT_CONFIG: Config = {
   pageSize: 50,
   rateLimitGracePeriod: 1000,
   recheckWithRemainingRateLimit: false,
+  branchRecheckBuckets: 0,
+  incrementalHistory: false,
 };
