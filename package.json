@@ -10,7 +10,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "get-all-github-contributions": "git+https://github.com/tamino-martinius/node-get-all-github-contributions.git#bcb74d405bf7ecd4e2fb695cf0d8616b2f49a59b"
+    "get-all-github-contributions": "git+https://github.com/tamino-martinius/node-get-all-github-contributions.git#a3ccd23a87828d77c998b7f9ca555e13566ff06f"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
