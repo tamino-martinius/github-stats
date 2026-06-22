@@ -48,13 +48,15 @@ async function main() {
   // 3. Load config
   const userConfig = loadConfig();
   const importOptions: ImportConfig["import"] =
-    userConfig.skip || userConfig.concurrency || userConfig.maxRetries || userConfig.pageSize || userConfig.rateLimitGracePeriod || userConfig.recheckWithRemainingRateLimit
+    userConfig.skip || userConfig.concurrency || userConfig.maxRetries || userConfig.pageSize || userConfig.rateLimitGracePeriod || userConfig.recheckWithRemainingRateLimit || userConfig.branchRecheckBuckets || userConfig.incrementalHistory
       ? {
           concurrency: userConfig.concurrency,
           maxRetries: userConfig.maxRetries,
           pageSize: userConfig.pageSize,
           rateLimitGracePeriod: userConfig.rateLimitGracePeriod,
           recheckWithRemainingRateLimit: userConfig.recheckWithRemainingRateLimit,
+          branchRecheckBuckets: userConfig.branchRecheckBuckets,
+          incrementalHistory: userConfig.incrementalHistory,
           skip: userConfig.skip,
         }
       : undefined;

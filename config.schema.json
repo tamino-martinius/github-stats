@@ -34,6 +34,17 @@
       "type": "boolean",
       "default": false
     },
+    "branchRecheckBuckets": {
+      "description": "Spread non-default branch commit fetches across this many runs. Each run always syncs every repository's default branch plus a deterministic 1/N slice of its other branches, so all branches are covered within N runs. 0 or 1 disables rotation (default: 0)",
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
+    },
+    "incrementalHistory": {
+      "description": "For branches already synced once, only fetch commits newer than the last one seen instead of re-paginating full history (default: false)",
+      "type": "boolean",
+      "default": false
+    },
     "skip": {
       "description": "Repositories and organizations to skip during sync",
       "type": "object",
