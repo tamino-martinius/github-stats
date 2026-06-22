@@ -4,5 +4,8 @@
     "tamino-martinius/github-stats"
   ],
   "timeZone": "CET",
-  "recheckWithRemainingRateLimit": true
+  "concurrency": 4,
+  "branchRecheckBuckets": 4,
+  "incrementalHistory": true,
+  "recheckWithRemainingRateLimit": false
 }
