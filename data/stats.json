@@ -70673,10 +70673,10 @@
           "changedFiles": 218
         },
         "2026-07-01": {
-          "commitCount": 11,
-          "additions": 30568,
-          "deletions": 368,
-          "changedFiles": 262
+          "commitCount": 46,
+          "additions": 49514,
+          "deletions": 15560,
+          "changedFiles": 747
         }
       },
       "commitsPerHour": {
@@ -70775,6 +70775,54 @@
           "additions": 2733,
           "deletions": 20,
           "changedFiles": 17
+        },
+        "Wed, 19": {
+          "commitCount": 1,
+          "additions": 2677,
+          "deletions": 40,
+          "changedFiles": 21
+        },
+        "Wed, 17": {
+          "commitCount": 3,
+          "additions": 1399,
+          "deletions": 4,
+          "changedFiles": 11
+        },
+        "Wed, 16": {
+          "commitCount": 5,
+          "additions": 1278,
+          "deletions": 36,
+          "changedFiles": 11
+        },
+        "Wed, 15": {
+          "commitCount": 2,
+          "additions": 5178,
+          "deletions": 5937,
+          "changedFiles": 156
+        },
+        "Wed, 14": {
+          "commitCount": 1,
+          "additions": 98,
+          "deletions": 1,
+          "changedFiles": 4
+        },
+        "Wed, 13": {
+          "commitCount": 5,
+          "additions": 572,
+          "deletions": 8904,
+          "changedFiles": 87
+        },
+        "Wed, 12": {
+          "commitCount": 9,
+          "additions": 3790,
+          "deletions": 100,
+          "changedFiles": 54
+        },
+        "Wed, 11": {
+          "commitCount": 9,
+          "additions": 3954,
+          "deletions": 170,
+          "changedFiles": 141
         }
       }
     },
@@ -71198,6 +71246,17 @@
       }
     },
     {
+      "public": {
+        "name": "node-open-quiz-bank",
+        "url": "https://github.com/tamino-martinius/node-open-quiz-bank",
+        "languages": [
+          "TypeScript",
+          "JavaScript"
+        ],
+        "description": "Open, seedable bilingual (en/de) trivia question bank with a query API. Code MIT, data CC0.",
+        "stargazerCount": 0,
+        "forkCount": 0
+      },
       "commitsPerDate": {
         "2026-06-30": {
           "commitCount": 2,
@@ -71206,10 +71265,10 @@
           "changedFiles": 112
         },
         "2026-07-01": {
-          "commitCount": 26,
-          "additions": 166980,
-          "deletions": 151777,
-          "changedFiles": 290
+          "commitCount": 32,
+          "additions": 170257,
+          "deletions": 162482,
+          "changedFiles": 351
         }
       },
       "commitsPerHour": {
@@ -71236,16 +71295,45 @@
           "additions": 82682,
           "deletions": 75886,
           "changedFiles": 138
+        },
+        "Wed, 20": {
+          "commitCount": 1,
+          "additions": 22,
+          "deletions": 22,
+          "changedFiles": 2
+        },
+        "Wed, 19": {
+          "commitCount": 4,
+          "additions": 3254,
+          "deletions": 10682,
+          "changedFiles": 58
+        },
+        "Wed, 17": {
+          "commitCount": 1,
+          "additions": 1,
+          "deletions": 1,
+          "changedFiles": 1
         }
       }
     },
     {
+      "public": {
+        "name": "node-open-crossword-bank",
+        "url": "https://github.com/tamino-martinius/node-open-crossword-bank",
+        "languages": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "description": "Open, seedable bilingual (en/de) crossword word bank with a pattern-matching query API. Code MIT, data CC0.",
+        "stargazerCount": 0,
+        "forkCount": 0
+      },
       "commitsPerDate": {
         "2026-07-01": {
-          "commitCount": 22,
-          "additions": 293817,
-          "deletions": 19,
-          "changedFiles": 94
+          "commitCount": 49,
+          "additions": 589310,
+          "deletions": 5414,
+          "changedFiles": 220
         }
       },
       "commitsPerHour": {
@@ -71260,6 +71348,12 @@
           "additions": 292983,
           "deletions": 16,
           "changedFiles": 84
+        },
+        "Wed, 19": {
+          "commitCount": 27,
+          "additions": 295493,
+          "deletions": 5395,
+          "changedFiles": 126
         }
       }
     }
