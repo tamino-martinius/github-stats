@@ -71382,10 +71382,10 @@
           "changedFiles": 56
         },
         "2026-07-30": {
-          "commitCount": 57,
-          "additions": 37264,
-          "deletions": 2854,
-          "changedFiles": 676
+          "commitCount": 62,
+          "additions": 39270,
+          "deletions": 2876,
+          "changedFiles": 702
         },
         "2026-07-31": {
           "commitCount": 1,
@@ -71540,10 +71540,10 @@
           "changedFiles": 141
         },
         "Thu, 14": {
-          "commitCount": 11,
-          "additions": 7545,
+          "commitCount": 12,
+          "additions": 8462,
           "deletions": 422,
-          "changedFiles": 99
+          "changedFiles": 107
         },
         "Thu, 12": {
           "commitCount": 7,
@@ -72098,22 +72098,22 @@
           "changedFiles": 57
         },
         "Thu, 15": {
-          "commitCount": 5,
-          "additions": 827,
-          "deletions": 74,
-          "changedFiles": 26
+          "commitCount": 6,
+          "additions": 1065,
+          "deletions": 75,
+          "changedFiles": 28
         },
         "Thu, 17": {
-          "commitCount": 19,
-          "additions": 17255,
-          "deletions": 1263,
-          "changedFiles": 303
+          "commitCount": 20,
+          "additions": 17416,
+          "deletions": 1269,
+          "changedFiles": 310
         },
         "Thu, 16": {
-          "commitCount": 11,
-          "additions": 7412,
-          "deletions": 485,
-          "changedFiles": 122
+          "commitCount": 13,
+          "additions": 8102,
+          "deletions": 500,
+          "changedFiles": 131
         },
         "Fri, 00": {
           "commitCount": 1,
@@ -73437,6 +73437,44 @@
           "additions": 0,
           "deletions": 0,
           "changedFiles": 1
+        }
+      }
+    },
+    {
+      "public": {
+        "name": "extensions",
+        "url": "https://github.com/tamino-martinius/extensions",
+        "languages": [
+          "Shell",
+          "JavaScript",
+          "Python",
+          "Objective-C",
+          "Lua"
+        ],
+        "description": "Everything you need to extend Raycast.",
+        "stargazerCount": 0,
+        "forkCount": 0
+      },
+      "commitsPerDate": {
+        "2026-07-30": {
+          "commitCount": 2,
+          "additions": 4457,
+          "deletions": 12,
+          "changedFiles": 24
+        }
+      },
+      "commitsPerHour": {
+        "Thu, 16": {
+          "commitCount": 1,
+          "additions": 84,
+          "deletions": 12,
+          "changedFiles": 3
+        },
+        "Thu, 13": {
+          "commitCount": 1,
+          "additions": 4373,
+          "deletions": 0,
+          "changedFiles": 21
         }
       }
     }
