@@ -71427,10 +71427,16 @@
           "changedFiles": 1437
         },
         "2026-08-03": {
-          "commitCount": 22,
-          "additions": 24053,
-          "deletions": 837,
-          "changedFiles": 297
+          "commitCount": 25,
+          "additions": 27616,
+          "deletions": 913,
+          "changedFiles": 339
+        },
+        "2026-08-04": {
+          "commitCount": 4,
+          "additions": 2532,
+          "deletions": 159,
+          "changedFiles": 53
         }
       },
       "commitsPerHour": {
@@ -71441,10 +71447,10 @@
           "changedFiles": 16
         },
         "Mon, 23": {
-          "commitCount": 13,
-          "additions": 4465,
-          "deletions": 64,
-          "changedFiles": 54
+          "commitCount": 14,
+          "additions": 6389,
+          "deletions": 67,
+          "changedFiles": 76
         },
         "Mon, 22": {
           "commitCount": 20,
@@ -71459,10 +71465,10 @@
           "changedFiles": 80
         },
         "Tue, 00": {
-          "commitCount": 20,
-          "additions": 7799,
-          "deletions": 177,
-          "changedFiles": 104
+          "commitCount": 22,
+          "additions": 8540,
+          "deletions": 266,
+          "changedFiles": 118
         },
         "Tue, 09": {
           "commitCount": 8,
@@ -71909,10 +71915,10 @@
           "changedFiles": 139
         },
         "Mon, 07": {
-          "commitCount": 9,
-          "additions": 10556,
-          "deletions": 322,
-          "changedFiles": 140
+          "commitCount": 11,
+          "additions": 12195,
+          "deletions": 395,
+          "changedFiles": 160
         },
         "Mon, 06": {
           "commitCount": 4,
@@ -72089,10 +72095,10 @@
           "changedFiles": 7
         },
         "Tue, 01": {
-          "commitCount": 4,
-          "additions": 1371,
-          "deletions": 242,
-          "changedFiles": 9
+          "commitCount": 5,
+          "additions": 1889,
+          "deletions": 260,
+          "changedFiles": 23
         },
         "Fri, 05": {
           "commitCount": 4,
@@ -72177,6 +72183,12 @@
           "additions": 944,
           "deletions": 20,
           "changedFiles": 13
+        },
+        "Tue, 03": {
+          "commitCount": 1,
+          "additions": 1273,
+          "deletions": 52,
+          "changedFiles": 25
         }
       }
     },
@@ -72739,7 +72751,7 @@
           "TypeScript"
         ],
         "description": "Open, seedable bilingual (en/de) crossword word bank with a pattern-matching query API. Code MIT, data CC0.",
-        "stargazerCount": 0,
+        "stargazerCount": 1,
         "forkCount": 0
       },
       "commitsPerDate": {
@@ -73488,10 +73500,10 @@
           "changedFiles": 1
         },
         "2026-08-03": {
-          "commitCount": 73,
-          "additions": 232512,
-          "deletions": 7641,
-          "changedFiles": 1089
+          "commitCount": 110,
+          "additions": 250050,
+          "deletions": 9521,
+          "changedFiles": 1387
         },
         "2026-07-29": {
           "commitCount": 20,
@@ -73510,6 +73522,12 @@
           "additions": 34747,
           "deletions": 776,
           "changedFiles": 262
+        },
+        "2026-08-04": {
+          "commitCount": 47,
+          "additions": 20899,
+          "deletions": 1662,
+          "changedFiles": 391
         }
       },
       "commitsPerHour": {
@@ -73526,10 +73544,10 @@
           "changedFiles": 134
         },
         "Mon, 14": {
-          "commitCount": 3,
-          "additions": 7390,
-          "deletions": 19,
-          "changedFiles": 53
+          "commitCount": 4,
+          "additions": 8129,
+          "deletions": 278,
+          "changedFiles": 69
         },
         "Mon, 13": {
           "commitCount": 3,
@@ -73682,10 +73700,10 @@
           "changedFiles": 18
         },
         "Mon, 21": {
-          "commitCount": 3,
-          "additions": 2016,
-          "deletions": 56,
-          "changedFiles": 24
+          "commitCount": 13,
+          "additions": 6444,
+          "deletions": 219,
+          "changedFiles": 63
         },
         "Mon, 20": {
           "commitCount": 17,
@@ -73704,6 +73722,42 @@
           "additions": 8635,
           "deletions": 470,
           "changedFiles": 114
+        },
+        "Tue, 03": {
+          "commitCount": 9,
+          "additions": 2495,
+          "deletions": 341,
+          "changedFiles": 66
+        },
+        "Tue, 02": {
+          "commitCount": 13,
+          "additions": 6881,
+          "deletions": 373,
+          "changedFiles": 111
+        },
+        "Tue, 01": {
+          "commitCount": 14,
+          "additions": 4948,
+          "deletions": 375,
+          "changedFiles": 86
+        },
+        "Tue, 00": {
+          "commitCount": 11,
+          "additions": 6575,
+          "deletions": 573,
+          "changedFiles": 128
+        },
+        "Mon, 23": {
+          "commitCount": 14,
+          "additions": 8007,
+          "deletions": 1077,
+          "changedFiles": 162
+        },
+        "Mon, 22": {
+          "commitCount": 12,
+          "additions": 4364,
+          "deletions": 381,
+          "changedFiles": 81
         }
       }
     },
