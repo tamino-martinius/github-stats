@@ -10104,7 +10104,7 @@
           "JavaScript"
         ],
         "description": "TypeScript package which smartly trims and strips indentation from multi-line strings",
-        "stargazerCount": 177,
+        "stargazerCount": 178,
         "forkCount": 10
       },
       "commitsPerDate": {
@@ -68892,6 +68892,12 @@
           "additions": 374,
           "deletions": 374,
           "changedFiles": 200
+        },
+        "2026-10-22": {
+          "commitCount": 2,
+          "additions": 369,
+          "deletions": 369,
+          "changedFiles": 198
         }
       },
       "commitsPerHour": {
@@ -69052,10 +69058,10 @@
           "changedFiles": 77
         },
         "Thu, 11": {
-          "commitCount": 15,
-          "additions": 605,
-          "deletions": 459,
-          "changedFiles": 45
+          "commitCount": 16,
+          "additions": 787,
+          "deletions": 641,
+          "changedFiles": 143
         },
         "Wed, 15": {
           "commitCount": 12,
@@ -69232,10 +69238,10 @@
           "changedFiles": 14
         },
         "Thu, 17": {
-          "commitCount": 10,
-          "additions": 328,
-          "deletions": 49,
-          "changedFiles": 27
+          "commitCount": 11,
+          "additions": 515,
+          "deletions": 236,
+          "changedFiles": 127
         },
         "Mon, 21": {
           "commitCount": 11,
